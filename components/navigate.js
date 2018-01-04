@@ -20,6 +20,9 @@ class Navigate extends React.Component {
         return (
             <div>
                 <style dangerouslySetInnerHTML={{ __html: NavigateCss }} />
+                <Link href="/">
+                    <img className="logo" src="/static/images/logo.png" />
+                </Link>
                 <nav>
                     {lists}
                 </nav>

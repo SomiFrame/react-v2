@@ -20,8 +20,8 @@ class Index extends React.Component {
         return (
             <div>
                 <Layout>
-                    <div>hellp {this.props.userAgent}</div>
-                    <div>{this.props.stars}</div>
+                    {/* <div>hellp {this.props.userAgent}</div> */}
+                    {/* <div>{this.props.stars}</div> */}
                 </Layout>
             </div>
         )
