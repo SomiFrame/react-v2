@@ -1,0 +1,42 @@
+.layout-header {
+    margin-bottom: 20px;
+    ul {
+        margin: 0;
+        height: 40px;
+        width: 100%;
+        background-color: #333;
+        font-size: 14px;
+        color: #fff;
+        line-height: 40px;
+        padding: 0;
+        li {
+            display: inline-block;
+            list-style-type: none;
+            &.header-left{
+                float: left;
+            }
+            &.header-right{
+                float: right;
+            }
+            .app-download{
+                height: 100%;
+                width: 88px;
+                border-right: #555 solid 1px;
+                text-align: center;
+            }
+            .link-login {
+                display: inline-block;
+                background: #ff0077;
+                height: 100%;
+                width: 68px;
+                text-align: center;
+            }
+            .link-upload{
+                display: inline-block;
+                height: 100%;
+                width: 100px;
+                text-align: center;
+            }
+        }
+    }
+}
