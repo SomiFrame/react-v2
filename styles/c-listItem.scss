@@ -1,0 +1,79 @@
+.list-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    li {
+        .list-item {
+            height: 148px;
+            width: 100%;
+            padding: 14px 0;
+            border-bottom: 1px solid #d2d2d2;
+            .item-left {
+                float: left;
+                height: 120px;
+                width: 200px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .time-container {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    color: #fff;
+                    .label-background {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        opacity: .3;
+                        z-index: 1;
+                        left: 0;
+                        top: 0;
+                        background: #000000;
+                        border-radius: 4px;
+                    }
+                    label {
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            .item-right {
+                margin-left: 216px;
+                .item-title {
+                    display: block;
+                    margin: 0;
+                    line-height: 20px;
+                    font-size: 16px;
+                    height: 60px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .item-option {
+                    height: 18px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    .item-type {
+                        display: inline-block;
+                        height: 100%;
+                        width: auto;
+                        color: #ff0077;
+                        border: 1px solid #ff0077;
+                        padding: 0 10px;
+                        margin-right: 10px;
+                    }
+                    .item-user {
+                        display: inline-block;
+                        height: 100%;
+                        width: auto;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}

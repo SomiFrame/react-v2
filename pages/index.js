@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import React from 'react'
+import ListItem from '../components/listItem'
 import 'isomorphic-unfetch'
 
 import stylesheet from 'styles/index.scss'
@@ -20,6 +21,7 @@ class Index extends React.Component {
         return (
             <div>
                 <Layout>
+                    <ListItem />
                     {/* <div>hellp {this.props.userAgent}</div> */}
                     {/* <div>{this.props.stars}</div> */}
                 </Layout>

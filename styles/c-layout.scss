@@ -4,15 +4,26 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+li {
+    list-style-type: none;
+}
 a{
     text-decoration: none;
     color: inherit;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 .container {
     margin: auto;
     width: 1170px;
     .container-left {
         width: 110px; 
+        vertical-align: top;
         display: inline-block;
     }
     .container-middle{
