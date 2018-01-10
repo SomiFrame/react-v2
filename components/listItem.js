@@ -28,7 +28,7 @@ class ListItem extends Component {
                                 <Link href="">
                                     <a className="item-title">
                                         Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5
-                                    Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p
+                                        Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p
                                     </a>
                                 </Link>
                                 <div className="item-option">
@@ -40,6 +40,19 @@ class ListItem extends Component {
                                     <Link href="">
                                         <a className="item-user">
                                             {'show搜趣坊'}
+                                        </a>
+                                    </Link>
+                                    <div className="period">.</div>
+                                    1232121次播放
+                                    <div className="period">.</div>
+                                    41分钟前
+                                </div>
+                                <div className="ad-block">
+                                    <Link href="">
+                                        <a className="ad-link">
+                                            {
+                                                '推荐：宝马娱乐乐开户就送８８８８元，宝马娱乐开户'
+                                            }
                                         </a>
                                     </Link>
                                 </div>

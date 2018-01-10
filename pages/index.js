@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import React from 'react'
 import ListItem from '../components/listItem'
 import 'isomorphic-unfetch'
+import Router from 'next/router'
 
 import stylesheet from 'styles/index.scss'
 class Index extends React.Component {
@@ -9,15 +10,18 @@ class Index extends React.Component {
         const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
         const res = await fetch('https://api.github.com/repos/zeit/next.js')
         const json = await res.json()
+        const router = Router
         return {
             stars: json.stargazers_count,
-            userAgent
+            userAgent,
+            router
         }
     }
     constructor(props) {
         super(props)
     }
     render() {
+        console.log(this.props.router,'router');
         return (
             <div>
                 <Layout>
