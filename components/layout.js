@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Navigate from './navigate'
 import Header from './header'
 import LayoutCss from 'styles/c-layout.scss'
+import News from './news'
+import SearchBox from './searchBox'
 
 const lists = [
   {
@@ -27,12 +29,17 @@ export default ({ children, title = 'This is the default title' }) => (
     <Header />
     <div className="container">
       <div className="container-left">
-        <Navigate lists={lists}/>
+        <Navigate lists={lists} />
       </div>
       <div className="container-middle">
+        <Link href={{ pathname: '/' }}>
+          <a>首页</a>
+        </Link>
+        <News />
         {children}
       </div>
       <div className="container-right">
+        <SearchBox />
       </div>
     </div>
 

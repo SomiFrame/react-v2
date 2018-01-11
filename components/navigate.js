@@ -20,7 +20,7 @@ class Navigate extends React.Component {
         return (
             <div>
                 <style dangerouslySetInnerHTML={{ __html: NavigateCss }} />
-                <Link href="/">
+                <Link href={{pathname:'/',as:'首页'}}>
                     <img className="logo" src="/static/images/logo.png" />
                 </Link>
                 <nav>
