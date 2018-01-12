@@ -18,7 +18,7 @@ const lists = [
     key: 2
   }
 ]
-export default ({ children, title = 'This is the default title' }) => (
+export default ({ object, title = 'This is the default title' }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -32,14 +32,15 @@ export default ({ children, title = 'This is the default title' }) => (
         <Navigate lists={lists} />
       </div>
       <div className="container-middle">
-        <Link href={{ pathname: '/' }}>
-          <a>首页</a>
-        </Link>
+        <label className="page-title">
+          {object.title}
+        </label>
         <News />
-        {children}
+        {object.mid_child}
       </div>
       <div className="container-right">
         <SearchBox />
+        {object.right_child}
       </div>
     </div>
 
