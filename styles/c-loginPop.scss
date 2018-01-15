@@ -12,10 +12,14 @@
         margin-bottom: 46px;
     }
     > form {
-        > input {
+        .form-div {
+            width: 100%;
+            height: 70px;
+        }
+        input {
             height: 36px;
             line-height: 36px;
-            margin-bottom: 34px;
+            margin-bottom: 4px;
             font-size: 16px;
             color: #666;
             border-bottom: 1px solid #ddd;
@@ -36,6 +40,10 @@
             &:-ms-input-placeholder { /* Internet Explorer 10+ */
                 color:    #ccc;
             }
+        }
+        label.has-error {
+            font-size: 12px;
+            color: #f07;
         }
         > a {
             font-size: 12px;

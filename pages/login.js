@@ -1,17 +1,10 @@
 import React from 'react'
-import LoginPop from '../components/loginPop'
-import stylesheet from 'styles/login.scss'
+import LoginPop from '../components/loginPop.js'
 import Router from 'next/router'
 import Link from 'next/link'
+import LoginSection from '../components/loginSection.js'
 
-const LoginSection = (props) => (
-    <React.Fragment>
-        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-        <div className={props.cName}>
-            {props.children}
-        </div>
-    </React.Fragment>
-)
+import stylesheet from 'styles/login.scss'
 
 function handleAnchor (href) {
     return (e) => {
@@ -32,11 +25,8 @@ class Login extends React.Component {
     render() {
         return (
             <div className="login">
+                <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
                 <div className="LoginAnchor">
-                    {/*
-                     <Link href="/login#first"><a className="anchor anchor-active" ></a></Link>
-                     <Link href="/login#second"><a className="anchor" ></a></Link>
-                     <Link href="/login#third"><a className="anchor" ></a></Link>*/}
                     <a href="#" className="anchor anchor-active" onClick={handleAnchor('/login#first')}></a>
                     <a href="#" className="anchor" onClick={handleAnchor('/login#second')}></a>
                     <a href="#" className="anchor" onClick={handleAnchor('/login#third')}></a>
@@ -73,7 +63,7 @@ class Login extends React.Component {
                     </div>
                 </LoginSection>
             </div>
-        )
+        );
     }
 }
 export default Login
