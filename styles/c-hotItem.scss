@@ -1,20 +1,20 @@
 .hot-container {
     width: 100%;
-    height: auto;
-    padding: 20px  20px 0 20px;
+    padding: 20px 20px 0 20px;
     margin-top: 20px;
     background-color: #f5f6f7;
+    overflow: auto;
     li.list-title {
         font-size: 18px;
         color: #333;
-
     }
     li {
+        margin-bottom: 15px;
+        display: block;
         .list-item {
             height: auto;
             width: 100%;
             padding-top: 15px;
-            margin-bottom:15px;
             .item-left {
                 float: left;
                 height: 80px;
