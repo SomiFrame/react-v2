@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding:  0;
+}
+
+.login {
+    position: relative;
+    .LoginAnchor {
+        position: fixed;
+        right: 30px;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        .anchor{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            background: #b5b5b4;
+            transition: all 0.3s ease-out;
+            cursor: pointer;
+            display: block;
+            &:hover {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #b5b5b4;
+                border-radius: 50%;
+                background: transparent;
+            }
+        }
+        .anchor-active {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #b5b5b4;
+            border-radius: 50%;
+            background: transparent;
+        }
+    }
+}
