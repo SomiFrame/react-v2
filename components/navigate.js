@@ -7,11 +7,9 @@ class Navigate extends React.Component {
         this.state = {
             list: []
         }
-        console.log(props);
     }
     render() {
         const numbers = this.props.lists;
-        console.log(numbers);
         const lists = numbers.map((number) =>
             <Link href={number.url} key={number.key}>
                 <a>{number.name}</a>
