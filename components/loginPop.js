@@ -16,7 +16,9 @@ const constraints = {
         },
         length: {
             minimum: 6,
-            tooShort: '^*密码不能少于%{count}个字符'
+            tooShort: '^*密码的长度为6到16个字符，请检查',
+            maximum: 16,
+            tooLong: '^*密码的长度为6到16个字符，请检查'
         }
     }
 };
@@ -27,7 +29,6 @@ class LoginPop extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(e) {
-        console.log(e);
         e.preventDefault();
         var form = e.target || e.srcElement;
         var errors = validate(form,constraints);
@@ -44,18 +45,19 @@ class LoginPop extends React.Component {
         return (
             <React.Fragment>
                 <style dangerouslySetInnerHTML={{ __html: LoginPopCss }} />
-                <div className="LoginPop">
-                    <div className="login-title">登陆</div>
+                <div className="LandRPop">
+                    <div className="pop-title">登陆</div>
                     <form id="loginForm" name="loginForm" onSubmit={this.handleSubmit}>
                         <div className="form-div">
                             <input id="name" name="name" type="text" placeholder="帐号："/>
-                            <label htmlFor="name" name="name"></label></div>
+                            <label htmlFor="name" name="name"></label>
+                        </div>
                         <div className="form-div">
                             <input id="password" name="password" type="password" placeholder="密码："/>
                             <label htmlFor="password" name="password"></label>
                         </div>
                         <Link href="/forget"><a>忘记密码?</a></Link>
-                        <div className="button-group">
+                        <div className="login-button-group">
                             <button className="login" type="submit">登陆</button>
                             <Link href="/register"><button className="register">注册</button></Link>
                         </div>

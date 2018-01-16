@@ -1,4 +1,5 @@
-.LoginPop {
+$redColor: #f07;
+.LandRPop {
     background-color: #fff;
     width: 400px;
     height: 367px;
@@ -6,7 +7,7 @@
     padding: 30px 50px;
     text-align: left;
     box-sizing: border-box;
-    .login-title {
+    .pop-title {
         font-size: 18px;
         color: 333;
         margin-bottom: 46px;
@@ -15,35 +16,36 @@
         .form-div {
             width: 100%;
             height: 70px;
-        }
-        input {
-            height: 36px;
-            line-height: 36px;
-            margin-bottom: 4px;
-            font-size: 16px;
-            color: #666;
-            border-bottom: 1px solid #ddd;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            width: 300px;
-            outline: none;
-            &::-webkit-input-placeholder { /* WebKit browsers */
-                color:    #ccc;
-            }
-            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-                color:    #ccc;
-            }
-            &::-moz-placeholder { /* Mozilla Firefox 19+ */
-                color:    #ccc;
-            }
-            &:-ms-input-placeholder { /* Internet Explorer 10+ */
-                color:    #ccc;
+            input {
+                height: 36px;
+                line-height: 36px;
+                margin-bottom: 4px;
+                font-size: 16px;
+                color: #666;
+                border-bottom: 1px solid #ddd;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                width: 300px;
+                outline: none;
+                &::-webkit-input-placeholder { /* WebKit browsers */
+                    color:    #ccc;
+                }
+                &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    color:    #ccc;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    color:    #ccc;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10+ */
+                    color:    #ccc;
+                }
             }
         }
         label.has-error {
+            display: block;
             font-size: 12px;
-            color: #f07;
+            color: $redColor;
         }
         > a {
             font-size: 12px;
@@ -54,10 +56,11 @@
             cursor: pointer;
             text-decoration: none;
             &:hover {
-                color: #f07;
+                color: $redColor;
             }
         }
-        .button-group {
+        //登陆按钮央视
+        .login-button-group {
             margin-top: 45px;
             > button {
                 height: 38px;
@@ -67,14 +70,54 @@
             }
             .login {
                 color: #fff;
-                background: #f07;
+                background: $redColor;
                 border: none;
             }
             .register {
-                color: #f07;
+                color: $redColor;
                 background: #fff;
-                border: 1px solid #f07;
+                border: 1px solid $redColor;
                 margin-left: 20px;
+            }
+        }
+        //注册页面中的注册按钮
+        .register-button {
+            margin-top: 6px;
+            > button {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+                text-align: center;
+                background: $redColor;
+                border: none;
+                margin-bottom: 5px;
+                border-radius: 4px;
+            }
+            a {
+                font-size: 12px;
+                color: $redColor;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+        //注册界面 复选框
+        .register-allow {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+            input {
+                margin: 0;
+                padding: 0;
+                vertical-align: text-top;
+                margin-right: 6px;
+            }
+            a {
+                color: $redColor;
+                cursor: pointer;
+                text-decoration: none;
             }
         }
     }
