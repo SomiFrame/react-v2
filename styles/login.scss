@@ -36,4 +36,34 @@
             background: transparent;
         }
     }
+    .FloatTop {
+        position: fixed;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background: #fff;
+        z-index: 10;
+        display: none;
+        > img {
+            position: absolute;
+            left: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        > div {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            line-height: 46px;
+            font-size: 18px;
+            background: #f07;
+            color: #fff;
+            height: 46px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
 }
