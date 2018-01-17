@@ -2,13 +2,30 @@ import React from 'react'
 import _ from 'underscore'
 import $ from "jquery"
 import RegisterPop from '../components/registerPop.js'
-import LoginSection from '../components/loginSection.js'
-import Router from 'next/router'
-import Link from 'next/link'
+import {LoginSection, FloatTop, LRAnchor} from '../components/loginSection.js'
 
 import stylesheet from 'styles/register.scss'
 
 class Register extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        // //滚动监听  显示导航栏
+        //默认隐藏悬浮顶部导航
+        var initTop = 900;
+        $(global.window).on('scroll', _.debounce(function(){
+            //this是window
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop < initTop) {
+                //在第一部分的时候，隐藏浮框
+                $('.FloatTop').hide(1000);
+            } else {
+                //否则展示浮框
+                $('.FloatTop').show(500);
+            }
+        },50));
+    }
     render() {
         return(
             <div className="Register">
@@ -44,6 +61,10 @@ class Register extends React.Component {
                         </div>
                     </div>
                 </LoginSection>
+                <FloatTop cName="FloatTop">
+                    注册
+                </FloatTop>
+                <LRAnchor cName="LandRAnchor" href="/register"/>
             </div>
         );
     }
