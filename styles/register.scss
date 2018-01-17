@@ -1,3 +1,69 @@
-.Register {
+*{
+    margin: 0;
+    padding:  0;
+}
 
+.Register {
+    position: relative;
+    .LandRAnchor {
+        position: fixed;
+        right: 30px;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        .anchor{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            background: #b5b5b4;
+            transition: all 0.3s ease-out;
+            cursor: pointer;
+            display: block;
+            &:hover {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #b5b5b4;
+                border-radius: 50%;
+                background: transparent;
+            }
+        }
+        .anchor-active {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #b5b5b4;
+            border-radius: 50%;
+            background: transparent;
+        }
+    }
+    .FloatTop {
+        position: fixed;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background: #fff;
+        z-index: 10;
+        display: none;
+        > img {
+            position: absolute;
+            left: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        > div {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            line-height: 46px;
+            font-size: 18px;
+            background: #f07;
+            color: #fff;
+            height: 46px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
 }

@@ -2,35 +2,9 @@ import React from 'react'
 import _ from 'underscore'
 import $ from "jquery"
 import LoginPop from '../components/loginPop.js'
-import Router from 'next/router'
-import Link from 'next/link'
-import LoginSection from '../components/loginSection.js'
-
+import {LoginSection, FloatTop, LRAnchor} from '../components/loginSection.js'
 
 import stylesheet from 'styles/login.scss'
-
-function handleAnchor (href) {
-    return (e) => {
-        e.preventDefault();
-        var children = e.currentTarget.parentElement.children;
-        for(let i = 0,len = children.length; i < len; i++) {
-            children[i].className = 'anchor';
-        }
-        e.currentTarget.className = 'anchor anchor-active';
-        Router.push(href);
-    }
-}
-
-function handleFloatTop() {
-    $('.FloatTop').hide(1000);
-    $('body,html').animate({scrollTop:0},1000);
-}
-
-const FloatTop = (props) => (
-    <div className={props.cName}>
-        {props.children}
-    </div>
-)
 
 class Login extends React.Component {
     constructor(props) {
@@ -56,15 +30,6 @@ class Login extends React.Component {
         return (
             <div className="login">
                 <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-                <FloatTop cName="FloatTop">
-                    <img src="/static/images/login-top-logo.png" />
-                    <div onClick={handleFloatTop}>登录</div>
-                </FloatTop>
-                <div className="LoginAnchor">
-                    <a href="#" className="anchor anchor-active" onClick={handleAnchor('/login#first')}></a>
-                    <a href="#" className="anchor" onClick={handleAnchor('/login#second')}></a>
-                    <a href="#" className="anchor" onClick={handleAnchor('/login#third')}></a>
-                </div>
                 <LoginSection cName="LoginTop">
                     <img src="/static/images/login-top-logo.png" />
                     <div id="first" name="first">
@@ -96,6 +61,8 @@ class Login extends React.Component {
                         </div>
                     </div>
                 </LoginSection>
+                <FloatTop cName="FloatTop">登录</FloatTop>
+                <LRAnchor cName="LoginAnchor" href="/login"/>
             </div>
         );
     }
