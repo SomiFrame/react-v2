@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Navigate from './navigate'
 import Header from './header'
 import LayoutCss from 'styles/c-layout.scss'
-import News from './news'
 import SearchBox from './searchBox'
 
 const lists = [
@@ -18,10 +17,10 @@ const lists = [
     key: 2
   }
 ]
-export default ({ object, title = 'This is the default title' }) => (
+export default (props) => (
   <div>
     <Head>
-      <title>{title}</title>
+      <title>{props.title}</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <style dangerouslySetInnerHTML={{ __html: LayoutCss }} global="true" />
@@ -32,18 +31,13 @@ export default ({ object, title = 'This is the default title' }) => (
         <Navigate lists={lists} />
       </div>
       <div className="container-middle">
-        <label className="page-title">
-          {object.title}
-        </label>
-        <News />
-        {object.mid_child}
+        {props.children}
       </div>
       <div className="container-right">
         <SearchBox />
-        {object.right_child}
+        {props.right_content}
       </div>
     </div>
-
     <footer>
       {'I`m here to stay'}
     </footer>
