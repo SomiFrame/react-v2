@@ -39,19 +39,17 @@ class Index extends React.Component {
     constructor(props) {
         super(props)
         this.state = props;
-        console.log(this.state);
     }
     render() {
-        const object = {
-            title: '网友自拍',
-            mid_child : <ListItem listItems={this.state.listItems}/>,
-            right_child : <HotItem hotItems={this.state.hotItems}/>
-        }
+        const right_content = <HotItem hotItems={this.state.hotItems} />
         return (
             <div>
-                <Layout object={object}>
-                    {/* <div>hellp {this.props.userAgent}</div> */}
-                    {/* <div>{this.props.stars}</div> */}
+                <Layout right_content={right_content}>
+                    <label className="page-title">
+                        {'猜你喜欢'}
+                    </label>
+                    <News />
+                    <ListItem listItems={this.state.listItems} />
                 </Layout>
             </div>
         )
