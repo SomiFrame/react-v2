@@ -1,0 +1,52 @@
+.pay-content {
+    width: 660px;
+    .title {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 24px;
+        color: #000;
+        > div {
+            //position: absolute;
+            //left: 0;
+            //bottom: 0;
+            display: inline-block;
+            border-bottom: 1px solid #f07;
+        }
+    }
+    .pay-package {
+        width: 690px;
+        margin-bottom: 30px;
+    }
+    .VipPrevilige {
+        width: 690px;
+        > div {
+            width: 320px;
+            height: 110px;
+            border: 1px solid #ddd;
+            text-align: center;
+            margin: 20px 20px 0 0 ;
+            display: inline-block;
+            padding-top: 25px;
+            > img {
+                width: 58px;
+                height: 58px;
+                margin-right: 18px;
+                vertical-align: -11px;
+            }
+            > div {
+                display: inline-block;
+                color: #666;
+                text-align: left;
+                > p {
+                    font-size: 22px;
+                    margin: 0 0 6px 0;
+                }
+                > span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
