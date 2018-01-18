@@ -30,6 +30,7 @@
   "devDependencies": {
     "isomorphic-unfetch": "^2.0.0",
     "jquery": "^3.2.1",
+    "next": "^4.2.3",
     "normalize.css": "^7.0.0",
     "sass-loader": "^6.0.6",
     "underscore": "^1.8.3"
