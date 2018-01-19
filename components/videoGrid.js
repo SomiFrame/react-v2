@@ -17,14 +17,14 @@ class VGrid extends React.Component {
                                     <a>
                                         <img src={item.img_url} />
                                         {
-                                            item.status||
+                                            item.status? 
                                             <div className="grid-status on">
+                                                {'正在直播'}
+                                            </div>:
+                                            <div className="grid-status off">
                                                 {'正在直播'}
                                             </div>
                                         }
-                                        <div className="grid-status off">
-                                            {'正在直播'}
-                                        </div>
                                         <div className="grid-text-container">
                                         </div>
                                     </a>
