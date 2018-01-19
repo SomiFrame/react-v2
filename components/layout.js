@@ -13,8 +13,18 @@ const lists = [
   },
   {
     name: '网友自拍',
-    url: '/about',
+    url: '/selfie',
     key: 2
+  },
+  {
+    name: '女优视频',
+    url: '/actress',
+    key: 3
+  },
+  {
+    name: '女神直播',
+    url: '/goddess',
+    key: 4
   }
 ]
 export default (props) => (

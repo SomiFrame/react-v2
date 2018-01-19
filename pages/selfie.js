@@ -4,9 +4,9 @@ import ListItem from '../components/listItem'
 import 'isomorphic-unfetch'
 import HotItem from '../components/hotItem'
 import Router from 'next/router'
+import News from '../components/news'
 
-import stylesheet from 'styles/index.scss'
-class Index extends React.Component {
+class Selfie extends React.Component {
     static async getInitialProps({ req }) {
         let listItems = [
             {
@@ -46,7 +46,7 @@ class Index extends React.Component {
             <div>
                 <Layout right_content={right_content}>
                     <label className="page-title">
-                        {'猜你喜欢'}
+                        {'网友自拍'}
                     </label>
                     <News />
                     <ListItem listItems={this.state.listItems} />
@@ -55,4 +55,4 @@ class Index extends React.Component {
         )
     }
 }
-export default Index;
+export default Selfie ;

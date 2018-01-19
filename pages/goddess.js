@@ -1,12 +1,12 @@
 import Layout from '../components/layout'
 import React from 'react'
-import ListItem from '../components/listItem'
 import 'isomorphic-unfetch'
 import HotItem from '../components/hotItem'
 import Router from 'next/router'
 import News from '../components/news'
+import VideoGrid from '../components/videoGrid'
 
-class Index extends React.Component {
+class Goddess extends React.Component {
     static async getInitialProps({ req }) {
         let listItems = [
             {
@@ -17,10 +17,9 @@ class Index extends React.Component {
                 type: '自拍',
                 author: 'toro',
                 play_count: 12352312,
-                released: '41分钟前'
-            }
-        ];
-        let hotItems = [
+                released: '41分钟前',
+                href: 'http://www.google.com'
+            },
             {
                 name: '',
                 title: 'DifferBetween HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5 Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p',
@@ -29,9 +28,11 @@ class Index extends React.Component {
                 type: '自拍',
                 author: 'toro',
                 play_count: 12352312,
-                released: '41分钟前'
+                released: '41分钟前',
+                href: 'http://www.google.com'
             }
         ];
+        let hotItems = [];
         return {
             listItems,
             hotItems
@@ -47,13 +48,13 @@ class Index extends React.Component {
             <div>
                 <Layout right_content={right_content}>
                     <label className="page-title">
-                        {'猜你喜欢'}
+                        {'女神直播'}
                     </label>
                     <News />
-                    <ListItem listItems={this.state.listItems} />
+                    <VideoGrid videoGrids={this.state.listItems} />
                 </Layout>
             </div>
         )
     }
 }
-export default Index;
+export default Goddess;

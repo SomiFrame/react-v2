@@ -6,7 +6,7 @@ import HotItem from '../components/hotItem'
 import Router from 'next/router'
 import News from '../components/news'
 
-class Index extends React.Component {
+class Actress extends React.Component {
     static async getInitialProps({ req }) {
         let listItems = [
             {
@@ -18,9 +18,7 @@ class Index extends React.Component {
                 author: 'toro',
                 play_count: 12352312,
                 released: '41分钟前'
-            }
-        ];
-        let hotItems = [
+            },
             {
                 name: '',
                 title: 'DifferBetween HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5 Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p',
@@ -32,6 +30,7 @@ class Index extends React.Component {
                 released: '41分钟前'
             }
         ];
+        let hotItems = [];
         return {
             listItems,
             hotItems
@@ -47,7 +46,7 @@ class Index extends React.Component {
             <div>
                 <Layout right_content={right_content}>
                     <label className="page-title">
-                        {'猜你喜欢'}
+                        {'女优视频'}
                     </label>
                     <News />
                     <ListItem listItems={this.state.listItems} />
@@ -56,4 +55,4 @@ class Index extends React.Component {
         )
     }
 }
-export default Index;
+export default Actress;
