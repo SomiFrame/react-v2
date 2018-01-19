@@ -19,7 +19,12 @@ ul.video-grid {
             padding: 5px 10px;
             top: 10px;
             left: 0;
-            background: #ff0077;
+            &.on {
+                background: #ff0077;
+            }
+            &.off{
+                background: #333;
+            }
         }
     }
 }

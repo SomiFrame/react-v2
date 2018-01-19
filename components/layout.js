@@ -25,6 +25,11 @@ const lists = [
     name: '女神直播',
     url: '/goddess',
     key: 4
+  },
+  {
+    name: '会员特权',
+    url: '/pay',
+    key: 5
   }
 ]
 export default (props) => (

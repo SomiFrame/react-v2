@@ -18,7 +18,8 @@ class Goddess extends React.Component {
                 author: 'toro',
                 play_count: 12352312,
                 released: '41分钟前',
-                href: 'http://www.google.com'
+                href: 'http://www.google.com',
+                status: true
             },
             {
                 name: '',
@@ -29,7 +30,8 @@ class Goddess extends React.Component {
                 author: 'toro',
                 play_count: 12352312,
                 released: '41分钟前',
-                href: 'http://www.google.com'
+                href: 'http://www.google.com',
+                status: false
             }
         ];
         let hotItems = [];

@@ -15,9 +15,15 @@ class VGrid extends React.Component {
                             <li key={index} className="grid-item">
                                 <Link href={item.href}>
                                     <a>
-                                        <img src={item.img_url}/>
-                                        <div className="grid-status">
-                                        {'正在直播'}
+                                        <img src={item.img_url} />
+                                        {
+                                            item.status||
+                                            <div className="grid-status on">
+                                                {'正在直播'}
+                                            </div>
+                                        }
+                                        <div className="grid-status off">
+                                            {'正在直播'}
                                         </div>
                                         <div className="grid-text-container">
                                         </div>
