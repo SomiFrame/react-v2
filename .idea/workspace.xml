@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c90a0b3-ab22-4a57-8a47-4deab0a13d46" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/beauty.js" afterPath="$PROJECT_DIR$/pages/beauty.js" />
     </list>
     <ignored path="react-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,42 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/pay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="beauty.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/beauty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payPackage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/payPackage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="182">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+                <marker date="1516262266315" expanded="true" signature="330:3765" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pay.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/pay.scss">
+      <file leaf-file-name="beauty.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/beauty.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
               <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
@@ -67,24 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selfie.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/selfie.js">
+      <file leaf-file-name="beautyItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/beautyItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-722">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c-payPackage.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/c-payPackage.scss">
+      <file leaf-file-name="c-beautyItem.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/c-beautyItem.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="318">
+              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+              <folding>
+                <marker date="1516261653758" expanded="true" signature="49:2362" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,6 +94,10 @@
         <option value="$PROJECT_DIR$/components/payPackage.js" />
         <option value="$PROJECT_DIR$/pages/pay.js" />
         <option value="$PROJECT_DIR$/styles/pay.scss" />
+        <option value="$PROJECT_DIR$/styles/c-beautyItem.scss" />
+        <option value="$PROJECT_DIR$/components/beautyItem.js" />
+        <option value="$PROJECT_DIR$/pages/beauty.js" />
+        <option value="$PROJECT_DIR$/styles/beauty.scss" />
       </list>
     </option>
   </component>
@@ -193,6 +177,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-v2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -236,7 +234,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../b-portal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.12.3/bin/node" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -299,12 +297,12 @@
       <workItem from="1515980582634" duration="19241000" />
       <workItem from="1516074960486" duration="12846000" />
       <workItem from="1516153561007" duration="18765000" />
-      <workItem from="1516244381122" duration="1435000" />
+      <workItem from="1516244381122" duration="11462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76761000" />
+    <option name="totallyTimeSpent" value="86788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -348,27 +346,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/postcss.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/navigate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -669,7 +646,7 @@
         <state relative-caret-position="468">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -687,7 +664,7 @@
         <state relative-caret-position="-722">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -702,19 +679,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/pay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+        <state relative-caret-position="391">
+          <caret line="57" column="78" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="78" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/c-beautyItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding>
+            <marker date="1516261653758" expanded="true" signature="49:2362" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/beautyItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/beauty.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/beauty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1516262266315" expanded="true" signature="330:3765" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

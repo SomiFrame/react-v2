@@ -1,0 +1,15 @@
+.Beauty {
+    .beauty-get-more {
+        background: #78b1f7;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+        > img {
+            margin-left: 12px;
+        }
+    }
+}

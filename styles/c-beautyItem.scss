@@ -1,0 +1,84 @@
+.BeautyList {
+    width: 700px;
+    .beauty-item {
+        width: 218px;
+        margin: 0 14px 20px 0;
+        display: inline-block;
+        box-shadow: 0px 2px 4px 0px rgba(221,221,221,1);
+        transition: box-shadow 0.2s;
+        > div {
+            width: 100%;
+        }
+        .beauty-main {
+            position: relative;
+            height: 165px;
+            width: 100%;
+            > img {
+                width: 100%;
+                height: 165px;
+            }
+            .beauty-state {
+                width: 70px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 14px;
+                position: absolute;
+                background: #f07;
+                top: 10px;
+                left: 0;
+            }
+            .beauty-vip {
+                display: inline-block;
+                width: 136px;
+                height: 35px;
+                background: url('/static/images/beauty-vip.png') no-repeat;
+                line-height: 35px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+        }
+        .beauty-title {
+            font-size: 16px;
+            color: #000;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            width: 100%;
+            a {
+                display: inline-block;
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #333;
+                width: 64%;
+                &:hover {
+                    color: #f07;
+                }
+            }
+            >span {
+                display: inline-block;
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #888;
+                width: 35%;
+                float: right;
+                > img {
+                    vertical-align: text-bottom;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: 0px 2px 4px 0px rgba(170,170,170,1);
+        }
+    }
+}
