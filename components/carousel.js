@@ -30,10 +30,11 @@ class Carousel extends Component {
                     <Slider {...settings} >
                         {
                             this.props.lists.map((item, index) =>
-                                <div key={index}>
+                                <div className="carousel-item" key={index}>
+                                    <img className="carousel-img" src={item.img_url} />
                                     <Link href={item.link}>
                                         <a className="carousel-link">
-                                            <img className="carousel-img" src={item.img_url} />
+                                        {item.title}
                                         </a>
                                     </Link>
                                 </div>

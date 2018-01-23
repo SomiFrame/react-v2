@@ -44,6 +44,28 @@ class Index extends React.Component {
                 author: 'toro',
                 play_count: 12352312,
                 released: '41分钟前'
+            },
+            {
+                link: 'http://www.google.com',
+                name: '',
+                title: '测试',
+                img_url: 'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',
+                duration: '1:58',
+                type: '自拍',
+                author: 'toro',
+                play_count: 12352312,
+                released: '41分钟前'
+            },
+            {
+                link: 'http://www.google.com',
+                name: '',
+                title: 'safoiuwer',
+                img_url: 'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',
+                duration: '1:58',
+                type: '自拍',
+                author: 'toro',
+                play_count: 12352312,
+                released: '41分钟前'
             }
         ]
         return {

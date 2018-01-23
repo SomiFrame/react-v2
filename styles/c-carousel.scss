@@ -1,12 +1,25 @@
 .carousel-container {
-    a.carousel-link {
-        display: block;
-        width: 100%;
-        height: 300px;
+    .carousel-item {
         position: relative;
+        height: 300px;
         img.carousel-img {
             width: 100%;
             height: 100%;
+        }
+        a.carousel-link {
+            display: block;
+            width: 100%;
+            height: 40px;
+            bottom: 0;
+            background: #333;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 40px;
+            white-space: nowrap;
         }
     }
 }
