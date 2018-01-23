@@ -32,7 +32,9 @@
     "jquery": "^3.2.1",
     "next": "^4.2.3",
     "normalize.css": "^7.0.0",
+    "react-slick": "^0.16.0",
     "sass-loader": "^6.0.6",
+    "slick-carousel": "^1.8.1",
     "underscore": "^1.8.3"
   }
 }
