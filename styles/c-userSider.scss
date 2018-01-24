@@ -1,0 +1,120 @@
+.UserSider {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #323944;
+    z-index: 100;
+    overflow: auto;
+    box-shadow: 2px 0px 13px rgba(0,0,0,0.35);
+    .sider-logo {
+        height: 80px;
+        width: 100%;
+        text-align: center;
+        line-height: 95px;
+        border-bottom: 1px solid #3b414f;
+    }
+    .sider-content {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #838ca0;
+                .navi-parent {
+                    height: 50px;
+                    line-height: 50px;
+                    cursor: pointer;
+                    position: relative;
+                    > img {
+                        margin: 0 0 0 40px;
+                        vertical-align: sub;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 15px;
+                    }
+                    &:hover {
+                        background: #21262f;
+                        > label {
+                            height: 42px;
+                            width: 2px;
+                            background: #f07;
+                            position: absolute;
+                            top: 4px;
+                            left: 0px;
+                        }
+                    }
+                }
+                .navi-parent-hover {
+                    background: #21262f;
+                    > label {
+                        height: 42px;
+                        width: 2px;
+                        background: #f07;
+                        position: absolute;
+                        top: 4px;
+                        left: 0px;
+                    }
+                }
+                .navi-children {
+                    display: none;
+                    > div {
+                        height: 40px;
+                        line-height: 40px;
+                        margin-left: 75px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        > label {
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            border: 1px solid #838ca0;
+                            margin-right: 10px;
+                        }
+                        &:hover {
+                            color: #f07;
+                            > label {
+                                border: 1px solid #f07;
+                            }
+                        }
+                    }
+                    .chirdren-hover {
+                        color: #f07;
+                        > label {
+                            border: 1px solid #f07;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sider-recharge {
+        height: 50px;
+        line-height: 53px;
+        border-top: 6px solid #3b414f;
+        padding: 0 0 0 40px;
+        >img {
+            vertical-align: sub;
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+        button {
+            width: 64px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background: #f07;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
