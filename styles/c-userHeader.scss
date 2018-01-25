@@ -35,6 +35,12 @@
             margin-right: 30px;
             background: url(/static/images/user-top-tips.png) no-repeat;
         }
+        .top-tips:hover .message-tips {
+            display: block;
+        }
+        .message-tips {
+            display: none;
+        }
         .top-userInfo {
             display: inline-block;
             position: relative;
@@ -42,14 +48,30 @@
             color: #444;
             line-height: 80px;
             vertical-align: middle;
-            > img {
-                width: 32px;
-                height: 32px;
-                margin-right: 10px;
-                border-radius: 50%;
-                vertical-align: -10px;
+            > div {
+                display: inline-block;
+                > img {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    vertical-align: -10px;
+                }
+                &:hover .user-header-tips {
+                    display: block;
+                }
+                .user-header-tips {
+                    display: none;
+                    top: 70px;
+                    left: -172px;
+                    .tir-up {
+                        right: 118px;
+                    }
+                }
             }
+
         }
+
     }
 }
 
@@ -63,7 +85,7 @@
     height: 0px;
     border: 12px solid transparent;
     border-bottom-color: #f07;
-    >div {
+    > div {
         display: inline-block;
         position: absolute;
         z-index: 10;
@@ -73,16 +95,16 @@
         height: 0px;
         border: 12px solid transparent;
         border-bottom-color: #fff;
-        z-index: 1px;
     }
 }
 .UserHeaderTips {
     position: absolute;
-    top: 72px;
-    right: 0px;
+    top: 40px;
+    left: -127px;
     width: 320px;
     border-top: 2px solid #f07;
-    background: #f0f0f0;
+    background: #fff;
+    box-shadow: 1px 2px 18px rgba(0,0,0,0.35);
 }
 
 //信息提示的内容信息样式
@@ -104,23 +126,163 @@
                 color: #f07;
             }
         }
+        .span-hover {
+            color: #f07;
+        }
     }
     .tip-content {
         .tip-news {
             height: 74px;
-            line-height: 20px;
-            border-top: 1px solid #f07;
+            line-height: normal;
+            border-top: 1px solid #f2f2f2;
             padding: 18px 20px;
             font-size: 14px;
             color: #666;
             > label {
                 display: block;
-                margin: 0;
-                margin-bottom: 10px;
+                line-height: normal;
+                margin: 14px 0 10px 0;
+                > a {
+                    display: inline-block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background: #999;
+                    margin-right: 10px;
+                }
             }
             > span {
+                line-height: normal;
                 color: #999;
+                margin-left: 20px;
             }
+            &:hover {
+                > label {
+                    > a {
+                        background: #f07;
+                    }
+                }
+            }
+        }
+        .tips-bottom {
+            height: 32px;
+            line-height: 32px;
+            padding: 0 20px;
+            text-align: right;
+            background: #f2f2f2;
+            > a {
+                font-size: 12px;
+                color: #888;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//我头像悬浮后展示的个人信息  样式信息
+.UserInfoContent {
+    .info-middle {
+        padding: 20px;
+        .info-user {
+            height: 60px;
+            line-height: normal;
+            position: relative;
+            > img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+            > div {
+                display: inline-block;
+                line-height: normal;
+                position: absolute;
+                top: 2px;
+                left: 70px;
+                p {
+                    font-size: 18px;
+                    color: #333;
+                    margin: 0;
+                }
+                span {
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+            button {
+                position: absolute;
+                bottom: 10px;
+                right: 0;
+                border: none;
+                font-size: 12px;
+                color: #fff;
+                background: #f07;
+                border-radius: 11px;
+                height: 22px;
+                line-height: 22px;
+                width: 80px;
+                text-align: center;
+            }
+        }
+        .info-item {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            width: 310px;
+            line-height: normal;
+            .item-section {
+                width: 57px;
+                display: inline-block;
+                text-align: center;
+                line-height: normal;
+                margin-right: 44px;
+                cursor: pointer;
+                > div {
+                    display: inline-block;
+                    width: 40px;
+                    height: 26px;
+                }
+                .section-record {
+                    background: url(/static/images/u-top-record.png) no-repeat;
+                }
+                .section-collection {
+                    background: url(/static/images/u-top-collection.png) no-repeat;
+                }
+                .section-video {
+                    background: url(/static/images/u-top-video.png) no-repeat;
+                }
+                > p {
+                    line-height: normal;
+                    margin: 0;
+                }
+                &:hover {
+                    .section-record {
+                        background: url(/static/images/u-top-record-hover.png) no-repeat;
+                    }
+                    .section-collection {
+                        background: url(/static/images/u-top-collection-hover.png) no-repeat;
+                    }
+                    .section-video {
+                        background: url(/static/images/u-top-video-hover.png) no-repeat;
+                    }
+                    color: #f07;
+                }
+            }
+        }
+    }
+    .info-bottom {
+        height: 32px;
+        line-height: 32px;
+        color: #888;
+        font-size: 14px;
+        padding: 0 20px;
+        background: #f2f2f2;
+        > a {
+            float: left;
+            text-decoration: none;
+            color: #888;
+        }
+        > span {
+            float: right;
         }
     }
 }
