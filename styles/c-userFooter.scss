@@ -1,0 +1,46 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 45px 0 40px 0;
+    background: #ddd;
+    color: #333;
+    font-size: 12px;
+    line-height: normal;
+    > div {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        .footer-first {
+            line-height: 22px;
+        }
+        .footer-second {
+            > ul {
+                line-height: 22px;
+                margin: 14px auto 6px auto;
+                line-height: normal;
+                li {
+                    line-height: normal;
+                    display: inline-block;
+                    cursor: pointer;
+                    a {
+                        color: #333;
+                        font-size: 12px;
+                        text-decoration: none;
+                        &:hover {
+                            color: #f07;
+                        }
+                    }
+                    > span {
+                        vertical-align: 1px;
+                        margin: -2px 8px 0 6px;
+                    }
+                }
+            }
+        }
+        .footer-third {
+            line-height: normal;
+        }
+    }
+}
