@@ -5,7 +5,6 @@ import 'isomorphic-unfetch'
 import HotItem from '../components/hotItem'
 import Router from 'next/router'
 import News from '../components/news'
-
 class Selfie extends React.Component {
     static async getInitialProps({ req }) {
         let listItems = [
@@ -33,7 +32,8 @@ class Selfie extends React.Component {
         let hotItems = [];
         return {
             listItems,
-            hotItems
+            hotItems,
+            Router
         }
     }
     constructor(props) {
@@ -41,10 +41,10 @@ class Selfie extends React.Component {
         this.state = props;
     }
     render() {
-        const right_content = <HotItem hotItems={this.state.hotItems} />
+        const right_content = <HotItem hotItems={this.props.hotItems} />
         return (
             <div>
-                <Layout right_content={right_content}>
+                <Layout right_content={right_content} Router={this.props.Router}>
                     <label className="page-title">
                         {'网友自拍'}
                     </label>

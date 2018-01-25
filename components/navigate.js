@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import NavigateCss from '../styles/c-navigate.scss'
+import Router from 'next/router'
 class Navigate extends React.Component {
     constructor(props) {
         super(props);
@@ -9,10 +10,16 @@ class Navigate extends React.Component {
         }
     }
     render() {
-        const numbers = this.props.lists;
+        const numbers = this.props.lists
+        let pathname= ''
+        if(this.props.Router.router!==null) {
+            pathname=this.props.Router.router.pathname
+        }
         const lists = numbers.map((number) =>
             <Link href={number.url} key={number.key}>
-                <a>{number.name}</a>
+                <a className={
+                    pathname==number.url?'active':''
+                }>{number.name}</a>
             </Link>
         )
         return (

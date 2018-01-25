@@ -4,6 +4,7 @@ import Navigate from './navigate'
 import Header from './header'
 import LayoutCss from 'styles/c-layout.scss'
 import SearchBox from './searchBox'
+import { Component } from 'react'
 
 const lists = [
   {
@@ -32,29 +33,36 @@ const lists = [
     key: 5
   }
 ]
-export default (props) => (
-  <div>
-    <Head>
-      <title>{props.title}</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <style dangerouslySetInnerHTML={{ __html: LayoutCss }} global="true" />
-    </Head>
-    <Header />
-    <div className="container">
-      <div className="container-left">
-        <Navigate lists={lists} />
+class Layout extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <div>
+        <Head>
+          <title>{this.props.title}</title>
+          <meta charSet='utf-8' />
+          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+          <style dangerouslySetInnerHTML={{ __html: LayoutCss }} global="true" />
+        </Head>
+        <Header />
+        <div className="container">
+          <div className="container-left">
+            <Navigate lists={lists} Router={this.props.Router}/>
+          </div>
+          <div className="container-middle">
+            {this.props.children}
+          </div>
+          <div className="container-right">
+            <SearchBox />
+            {this.props.right_content}
+          </div>
+        </div>
+        <footer>
+        </footer>
       </div>
-      <div className="container-middle">
-        {props.children}
-      </div>
-      <div className="container-right">
-        <SearchBox />
-        {props.right_content}
-      </div>
-    </div>
-    <footer>
-      {'I`m here to stay'}
-    </footer>
-  </div>
-)
+    )
+  }
+} 
+export default Layout

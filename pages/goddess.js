@@ -37,7 +37,8 @@ class Goddess extends React.Component {
         let hotItems = [];
         return {
             listItems,
-            hotItems
+            hotItems,
+            Router
         }
     }
     constructor(props) {
@@ -48,7 +49,7 @@ class Goddess extends React.Component {
         const right_content = <HotItem hotItems={this.state.hotItems} />
         return (
             <div>
-                <Layout right_content={right_content}>
+                <Layout right_content={right_content} Router={this.props.Router}>
                     <label className="page-title">
                         {'女神直播'}
                     </label>

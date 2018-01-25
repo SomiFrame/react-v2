@@ -71,7 +71,8 @@ class Index extends React.Component {
         return {
             listItems,
             hotItems,
-            carouselItems
+            carouselItems,
+            Router
         }
     }
     constructor(props) {
@@ -82,7 +83,7 @@ class Index extends React.Component {
         const right_content = <HotItem hotItems={this.state.hotItems} />
         return (
             <div>
-                <Layout right_content={right_content}>
+                <Layout right_content={right_content} Router={this.props.Router}>
                     <Carousel lists={this.state.carouselItems}/>
                     <label className="page-title">
                         {'猜你喜欢'}

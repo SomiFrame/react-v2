@@ -4,7 +4,6 @@ import Css from '../styles/c-listItem.scss'
 class ListItem extends Component {
     constructor(props) {
         super(props)
-        console.log(props);
     }
     componentDidMount() {
 

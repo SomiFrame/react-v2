@@ -19,7 +19,8 @@ class Carousel extends Component {
             speed: 500,
             autoplay: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false
         }
         return (
             <Fragment>
@@ -38,7 +39,6 @@ class Carousel extends Component {
                                         </a>
                                     </Link>
                                 </div>
-
                             )
                         }
                     </Slider>

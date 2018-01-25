@@ -1,4 +1,5 @@
 .carousel-container {
+    margin-bottom: 15px;
     .carousel-item {
         position: relative;
         height: 300px;
@@ -9,10 +10,11 @@
         a.carousel-link {
             display: block;
             width: 100%;
+            padding: 0 20px;
             height: 40px;
-            bottom: 0;
-            background: #333;
+            bottom: 40px;
             color: #fff;
+            text-shadow: 2px 2px #333 ;
             position: absolute;
             text-align: center;
             text-overflow: ellipsis;
@@ -20,6 +22,17 @@
             font-size: 14px;
             line-height: 40px;
             white-space: nowrap;
+        }
+    }
+    ul.slick-dots {
+        bottom: 10px;
+        li {
+            button {
+                &::before {
+                    color: #fff;
+                    font-size: 40px;
+                }
+            }
         }
     }
 }
