@@ -1,0 +1,18 @@
+body {
+    background: #f2f2f2;
+    padding: 100px 0 0 200px;
+}
+.UserProfile {
+    width: 1000px;
+    margin: 0 auto;
+    .profile-left {
+        width: 310px;
+        float: left;
+        background: #fff;
+    }
+    .profile-right {
+        width: 670px;
+        float: right;
+        background: #fff;
+    }
+}
