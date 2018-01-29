@@ -4,8 +4,31 @@ import Layout from '../../components/layout'
 import HotItem from '../../components/hotItem'
 import Css from '../../styles/play.scss'
 import Link from 'next/link'
+import ListItem from '../../components/listItem'
 class Play extends Component {
     static async getInitialProps({ req }) {
+        let listItems = [
+            {
+                name: '',
+                title: 'DifferBetween HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5 Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p',
+                img_url: 'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',
+                duration: '1:58',
+                type: '自拍',
+                author: 'toro',
+                play_count: 12352312,
+                released: '41分钟前'
+            },
+            {
+                name: '',
+                title: 'DifferBetween HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5 Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5Differences Between HTML 4.01 and HTML5p',
+                img_url: 'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',
+                duration: '1:58',
+                type: '自拍',
+                author: 'toro',
+                play_count: 12352312,
+                released: '41分钟前'
+            }
+        ];
         let hotItems = [
             {
                 name: '',
@@ -20,8 +43,19 @@ class Play extends Component {
         ];
         return {
             Router,
-            hotItems
+            hotItems,
+            listItems
         }
+    }
+    constructor(props) {
+        super(props)
+        this.state = this.props;
+        console.log(this.state)
+        this.setState({
+            thumb: true
+        })
+        this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
+        this.handleThumbSubmit = this.handleThumbSubmit.bind(this)
     }
     render() {
         const right_content = <HotItem hotItems={this.props.hotItems} />
@@ -48,15 +82,15 @@ class Play extends Component {
                     </div>
                     <div className="live-list">
                         <div className="list-title">
-                        {'女神直播'}
+                            {'女神直播'}
                         </div>
                         <ul className="list-content">
                             <li>
                                 <Link href={''}>
                                     <a className="live-link">
-                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '}/>
+                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '} />
                                         <label className="live-status">
-                                        {'正在直播'}
+                                            {'正在直播'}
                                         </label>
                                     </a>
                                 </Link>
@@ -64,9 +98,9 @@ class Play extends Component {
                             <li>
                                 <Link href={''}>
                                     <a className="live-link">
-                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '}/>
+                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '} />
                                         <label className="live-status">
-                                        {'正在直播'}
+                                            {'正在直播'}
                                         </label>
                                     </a>
                                 </Link>
@@ -74,9 +108,9 @@ class Play extends Component {
                             <li>
                                 <Link href={''}>
                                     <a className="live-link">
-                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '}/>
+                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '} />
                                         <label className="live-status">
-                                        {'正在直播'}
+                                            {'正在直播'}
                                         </label>
                                     </a>
                                 </Link>
@@ -84,9 +118,9 @@ class Play extends Component {
                             <li>
                                 <Link href={''}>
                                     <a className="live-link">
-                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '}/>
+                                        <img src={' https://i.ytimg.com/vi/BS9EMp7NXuE/hqdefault_live.jpg?sqp=CIyyptMF-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBfjqCJqhtblNZczZI269peJ4P7uA '} />
                                         <label className="live-status">
-                                        {'正在直播'}
+                                            {'正在直播'}
                                         </label>
                                     </a>
                                 </Link>
@@ -94,13 +128,52 @@ class Play extends Component {
                         </ul>
                     </div>
                     <div className="comment-block">
-                        <div className="comment-submit-block">
+                        <span className="comment-count">{12}</span>
+                        <span>条评论</span>
+                        <form className="form-block">
+                            <img src={'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg'} className="user-avatar" />
+                            <input className="comment-input" placeholder="写下你的评论...." />
+                            <button onClick={this.handleCommentSubmit} className="comment-button">
+                                评论
+                            </button>
+                        </form>
+                        <ul className="comment-list-block">
+                            <li>
+                                <div className="list-item">
+                                    <div className="item-top">
+                                        <img src={'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg'} className="user-avatar" />
+                                        <span className="user-name">{'龙傲天'}</span>
+                                        <span className="comment-time">{'9天前'}</span>
+                                    </div>
+                                    <div className="item-bottom clearfix">
+                                        <label>{'以前好像上过电视'}</label>
+                                        <div className="like-container">
+                                            <span className="like-count">{703}</span>
+                                            <button onClick={this.handleThumbSubmit} className={this.state.thumb?"button-like active":"button-like"}></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="more-recommend">
+                        <div className="recommend-title">
+                            更多推荐
                         </div>
-                        <div className="comment-list-block"></div>
+                        <ListItem listItems={this.props.listItems} />
                     </div>
                 </Layout>
             </Fragment>
         )
+    }
+    handleCommentSubmit(e){
+        console.log(e);
+
+    }
+    handleThumbSubmit(e) {
+        this.setState((prevState,props)=>({
+            thumb: !prevState.thumb
+        }))
     }
 }
 export default Play
