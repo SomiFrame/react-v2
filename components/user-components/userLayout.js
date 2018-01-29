@@ -15,6 +15,7 @@ class UserLayout extends React.Component {
             <div className="UserLayout">
                 <UserSider />
                 <UserHeader userInfo={userInfo}/>
+                {this.props.children}
                 <Footer />
             </div>
         )

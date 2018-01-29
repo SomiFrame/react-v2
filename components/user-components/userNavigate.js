@@ -42,12 +42,12 @@ class UserSider extends React.Component {
                <div className="sider-content">
                     <ul>
                         <li>
-                            <div className="navi-parent navi-parent-hover" data-href="/user/user" onClick={this.handleClick}>
+                            <a className="navi-parent" target="_blank" href="/">
                                 <label></label><img src="/static/images/user-index.png"/>首页
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div className="navi-parent" data-href="/user/profile" onClick={this.handleClick}>
+                            <div className="navi-parent navi-parent-hover" data-href="/user/profile" onClick={this.handleClick}>
                                 <label></label><img src="/static/images/user-profile.png"/>帐号概览
                             </div>
                         </li>
