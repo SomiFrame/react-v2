@@ -1,8 +1,9 @@
 .VideoItem {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid #efefef;
     line-height: normal;
+    background: #fff;
     //清楚浮动
     clear: both;
     zoom: 1;
@@ -36,6 +37,9 @@
             color: #333;
             line-height: 22px;
             height: 44px;
+            overflow:hidden;  //将超出内容隐藏
+            text-overflow:ellipsis; //IE专用属性，文本溢出时显示省略标记()；其他浏览器不支持。
+            //white-space:nowrap;  //强制内容不换行。强制在同一行内显示所有文本，直到文本结束或者遭遇 br 元素
         }
         .video-show {
             margin: 10px 0 12px 0;
@@ -71,4 +75,8 @@
             }
         }
     }
+}
+
+.ProfileVideos {
+    width: 100%;
 }
