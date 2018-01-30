@@ -1,10 +1,10 @@
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import React from 'react'
-import ListItem from '../components/listItem'
+import ListItem from '../../components/listItem'
 import 'isomorphic-unfetch'
-import HotItem from '../components/hotItem'
+import HotItem from '../../components/hotItem'
 import Router from 'next/router'
-import News from '../components/news'
+import News from '../../components/news'
 class Selfie extends React.Component {
     static async getInitialProps({ req }) {
         let listItems = [

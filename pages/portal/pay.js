@@ -1,9 +1,9 @@
 import $ from "jquery"
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import React from 'react'
-import {VipPackage, VipPrevilige} from '../components/payPackage'
+import {VipPackage, VipPrevilige} from '../../components/payPackage'
 import 'isomorphic-unfetch'
-import HotItem from '../components/hotItem'
+import HotItem from '../../components/hotItem'
 import Router from 'next/router'
 
 import stylesheet from 'styles/pay.scss'

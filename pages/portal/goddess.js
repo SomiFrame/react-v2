@@ -1,10 +1,10 @@
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import React from 'react'
 import 'isomorphic-unfetch'
-import HotItem from '../components/hotItem'
+import HotItem from '../../components/hotItem'
 import Router from 'next/router'
-import News from '../components/news'
-import VideoGrid from '../components/videoGrid'
+import News from '../../components/news'
+import VideoGrid from '../../components/videoGrid'
 
 class Goddess extends React.Component {
     static async getInitialProps({ req }) {
