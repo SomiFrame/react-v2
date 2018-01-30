@@ -1,6 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
 import {UserLayout} from '../../components/user-components/userLayout'
-import {VideoItem} from '../../components/user-components/userVideoItem'
+import {ProfileVideos} from '../../components/user-components/userVideoItem'
+import {UserInfo, UserAnalysis, PorfileRightTop} from '../../components/user-components/userProfile'
 
 import profileCss from 'styles/u-profile.scss'
 
@@ -12,10 +14,17 @@ class UserProfile extends React.Component {
                 <UserLayout>
                     <div className="UserProfile">
                         <div className="profile-left">
-                            
+                            <UserInfo />
+                            <UserAnalysis />
                         </div>
                         <div className="profile-right">
-                            <VideoItem />
+                            <PorfileRightTop />
+                            <div className="profile-right-videos">
+                                <div className="right-videos-title">
+                                    我的视频<Link href="/user/videos"><a>查看更多 &gt;</a></Link>
+                                </div>
+                                <ProfileVideos />
+                            </div>
                         </div>
                     </div>
                 </UserLayout>
