@@ -16,7 +16,7 @@ class Navigate extends React.Component {
             pathname=this.props.Router.router.pathname
         }
         const lists = numbers.map((number) =>
-            <Link href={number.url} key={number.key}>
+            <Link href={number.url} key={number.key} as={number.as}>
                 <a className={
                     pathname==number.url?'active':''
                 }>{number.name}</a>

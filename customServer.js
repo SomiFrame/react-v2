@@ -10,6 +10,7 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 const customRouter = require('./customRouter')
 app.prepare().then(() => {
+  console.log('createserver')
   createServer((req, res) => {
     // Be sure to pass `true` as the second argument to `url.parse`.
     // This tells it to parse the query portion of the URL.
@@ -29,6 +30,7 @@ app.prepare().then(() => {
     //   handle(req, res, parsedUrl)
     // }
   }).listen(3000, err => {
+    console.log('error',err)
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })
