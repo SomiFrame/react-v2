@@ -4,10 +4,7 @@
     border-bottom: 1px solid #efefef;
     line-height: normal;
     background: #fff;
-    //清楚浮动
-    clear: both;
-    zoom: 1;
-    overflow: auto;
+    position: relative;
     > div {
         float: left;
     }
@@ -25,6 +22,15 @@
             color: #fff;
             bottom: 10px;
             right: 10px;
+        }
+        .video-status {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 85px;
+            height: 48px;
+            background: url(/static/images/u-video-status.png) no-repeat;
         }
     }
     .video-info {
@@ -73,6 +79,27 @@
                 color: #999;
                 cursor: auto;
             }
+        }
+    }
+    .video-info-2 {
+        width: 550px;
+    }
+    .video-recommend {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 70px;
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #f07;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #f07;
+        cursor: pointer;
+        &:hover {
+            background: #f07;
+            color: #fff;
         }
     }
 }
