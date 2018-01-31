@@ -6,6 +6,26 @@ import {UserInfo, UserAnalysis, PorfileRightTop} from '../../components/user-com
 
 import profileCss from 'styles/u-profile.scss'
 
+
+const array = [
+    {id: 1, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 2, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 3, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 4, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 5, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 6, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 7, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白白哦体白哦体白哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+    {id: 8, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:20',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦哦体白哦体白哦体白哦体白哦',
+        videoPlays: '323504', videoComs: '504', videoFans:'789', time:'2016.12.30'},
+]
+
 class UserProfile extends React.Component {
     render() {
         return(
@@ -23,7 +43,7 @@ class UserProfile extends React.Component {
                                 <div className="right-videos-title">
                                     我的视频<Link href="/user/videos"><a>查看更多 &gt;</a></Link>
                                 </div>
-                                <ProfileVideos />
+                                <ProfileVideos videos={array} type="1"/>
                             </div>
                         </div>
                     </div>

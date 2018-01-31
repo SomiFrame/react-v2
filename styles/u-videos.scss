@@ -1,0 +1,35 @@
+body {
+    background: #f2f2f2;
+    padding: 100px 0 0 0px;
+}
+.my-videos {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    .videos-title {
+        font-size: 16px;
+        color: #999;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #efefef;
+        .title {
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            cursor: pointer;
+            &:hover {
+                color: #f07;
+                border-bottom: 1px solid #f07;
+            }
+        }
+        .title-hover {
+            color: #f07;
+            border-bottom: 1px solid #f07;
+        }
+    }
+    .video-container {
+        padding: 0 20px;
+    }
+}
