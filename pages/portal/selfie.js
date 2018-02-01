@@ -44,7 +44,7 @@ class Selfie extends React.Component {
         const right_content = <HotItem hotItems={this.props.hotItems} />
         return (
             <div>
-                <Layout right_content={right_content} Router={this.props.Router}>
+                <Layout title={'V2视频-网友自拍'} right_content={right_content} Router={this.props.Router}>
                     <label className="page-title">
                         {'网友自拍'}
                     </label>

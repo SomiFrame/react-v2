@@ -10,7 +10,6 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 const customRouter = require('./customRouter')
 app.prepare().then(() => {
-  console.log('createserver')
   createServer((req, res) => {
     // Be sure to pass `true` as the second argument to `url.parse`.
     // This tells it to parse the query portion of the URL.

@@ -9,14 +9,14 @@ import { Component } from 'react'
 const lists = [
   {
     name: '猜你喜欢',
-    url: '/sccc',
-    as: '/guess',
+    url: '/',
+    as: 'portal/guess',
     key: 1
   },
   {
     name: '网友自拍',
     url: '/selfie',
-    as: '/selfie',
+    as: 'selfie',
     key: 2
   },
   {
@@ -46,7 +46,7 @@ class Layout extends Component {
     return (
       <div>
         <Head>
-          <title>{this.props.title}</title>
+          <title>{'V2视频'}</title>
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <style dangerouslySetInnerHTML={{ __html: LayoutCss }} global="true" />
@@ -57,7 +57,7 @@ class Layout extends Component {
             <Navigate lists={lists} Router={this.props.Router}/>
           </div>
           <div className="container-middle">
-            {this.props.children}
+          {this.props.children}
           </div>
           <div className="container-right">
             <SearchBox />
