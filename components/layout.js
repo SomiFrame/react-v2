@@ -9,31 +9,31 @@ import { Component } from 'react'
 const lists = [
   {
     name: '猜你喜欢',
-    url: '/',
-    as: 'portal/guess',
+    url: '/portal/guess',
+    as: '/',
     key: 1
   },
   {
     name: '网友自拍',
-    url: '/selfie',
-    as: 'selfie',
+    url: '/portal/selfie',
+    as: '/selfie',
     key: 2
   },
   {
     name: '女优视频',
-    url: '/actress',
+    url: '/portal/actress',
     as: '/actress',
     key: 3
   },
   {
     name: '女神直播',
-    url: '/goddess',
+    url: '/portal/goddess',
     as: '/goddess',
     key: 4
   },
   {
     name: '会员特权',
-    url: '/pay',
+    url: '/portal/pay',
     as: '/pay',
     key: 5
   }
