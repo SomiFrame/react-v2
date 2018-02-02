@@ -74,7 +74,6 @@ class UserSider extends React.Component {
                             </div>
                             <div className="navi-children">
                                 <div className="navi-children-item" data-href="/user/income" onClick={this.handleClick}><label></label>收入概览</div>
-                                <div className="navi-children-item" data-href="/user/records" onClick={this.handleClick}><label></label>提现记录</div>
                             </div>
                         </li>
                         <li>
