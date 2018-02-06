@@ -1,0 +1,37 @@
+.AccountInfo {
+    > form {
+        widht: 100%;
+        .form-div {
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            .choose-div {
+                width: 100px;
+                height: 100px;
+                font-size: 14px;
+                color: #999;
+                text-align: center;
+                line-height: 20px;
+                background: #f0f0f0;
+                margin-right: 20px;
+                display: inline-block;
+                border-radius: 4px;
+                padding-top: 30px;
+            }
+            .choose-btn {
+                display: inline-block;
+                width: 100px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                font-size: 14px;
+                color: #f07;
+                border: 1px solid #f07;
+            }
+        }
+    }
+}

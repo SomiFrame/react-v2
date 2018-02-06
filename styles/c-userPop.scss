@@ -1,0 +1,40 @@
+.PopBox {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    .pop-box-container {
+        min-width: 320px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: #fff;
+        font-size: 16px;
+        .pop-box-title {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            text-align: left;
+            padding: 0 12px;
+            position: relative;
+            background: #f07;
+            color: #fff;
+
+            > a {
+                float: right;
+                cursor: pointer;
+            }
+        }
+        .pop-box-content {
+            padding: 40px;
+            background: #fff;
+        }
+    }
+}

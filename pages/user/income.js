@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import {UserLayout} from '../../components/user-components/userLayout'
 import {IncomeTop} from '../../components/user-components/userIncome'
+import {PopBox} from '../../components/user-components/userPop'
 
 import incomeCss from 'styles/u-income.scss'
 
 const income = {
     yesterdayIn: '0.00',
-    amountIn: '99.00'
+    amountIn: '100.00'
 };
 const incomeList = [
     {id:'1',type:'0',day:'7',date: '2015-12-18  12:30',income: '203.5 收入记录 7天'},
@@ -103,6 +104,9 @@ class MyIncome extends React.Component {
                         </div>
                     </div>
                 </UserLayout>
+                <PopBox title="提现申请">
+                     
+                </PopBox>
             </div>
         );
     }
