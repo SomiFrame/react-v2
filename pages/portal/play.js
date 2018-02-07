@@ -50,7 +50,6 @@ class Play extends Component {
     constructor(props) {
         super(props)
         this.state = this.props;
-        console.log(this.state)
         this.setState({
             thumb: true
         })

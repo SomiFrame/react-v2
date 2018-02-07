@@ -21,11 +21,10 @@ class News extends Component {
                 this.setState({ WebSocket: ws })
             }
             ws.onmessage = (data) => {
-                console.log(data, 'from servere massage')
                 this.setState({news: true})
             }
             ws.onerror = (data) => {
-                console.log(data, 'from servere massage')
+                this.WebSocket.close()
             }
         }
     }
