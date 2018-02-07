@@ -5,6 +5,8 @@
             width: 300px;
             margin: 0 auto;
             position: relative;
+            font-size: 14px;
+            margin-bottom: 14px;
             img {
                 width: 100px;
                 height: 100px;
@@ -20,7 +22,8 @@
                 margin-right: 20px;
                 display: inline-block;
                 border-radius: 4px;
-                padding-top: 30px;
+                padding-top: 36px;
+                margin-bottom: 26px;
             }
             .choose-btn {
                 display: inline-block;
@@ -31,6 +34,91 @@
                 font-size: 14px;
                 color: #f07;
                 border: 1px solid #f07;
+                border-radius: 2px;
+                cursor: pointer;
+                vertical-align: 15px;
+                &:hover {
+                    background: rgb(255,0,101);
+                    color: #fff;
+                }
+            }
+            > label {
+                position: absolute;
+                top: 0;
+                left: -85px;
+                color: #444;
+                height: 36px;
+                line-height: 36px;
+                width: 72px;
+                text-align: right;
+            }
+            > input {
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                color: #999;
+                border: 1px solid #ddd;
+                padding: 0 10px;
+            }
+            > textarea {
+                width: 100%;
+                height: 100px;
+                line-height: 22px;
+                padding: 10px;
+                color: #999;
+                border: 1px solid #ddd;
+            }
+            .save-info {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                background: #f07;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+                margin: 16px auto 40px auto;
+                border-radius: 2px;
+                cursor: pointer;
+                &:hover {
+                    background: rgba(255,0,101,.8);
+                }
+            }
+        }
+    }
+    .account-sponsored-links {
+        widht: 100%;
+        border-top: 1px dashed #ddd;
+        padding: 40px 0 100px 0;
+        text-align: center;
+        font-size: 16px;
+        > lable {
+            height: 42px;
+            line-height: 42px;
+            color: #333;
+        }
+        > input {
+            width: 300px;
+            height: 42px;
+            line-height: 42px;
+            border: 1px solid #f07;
+            padding: 0 20px;
+            color: #666;
+            margin-left: 10px;
+            border-radius: 2px 0 0 2px;
+        }
+        > a {
+            display: inline-block;
+            width: 100px;
+            height: 42px;
+            line-height: 42px;
+            border: none;
+            background: #f07;
+            color: #fff;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+            &:hover {
+                background: rgba(255,0,101,.8);
             }
         }
     }
