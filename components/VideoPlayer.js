@@ -1,21 +1,30 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import videojs from 'video.js'
+import DefaultCss from '../node_modules/video.js/src/css/vjs.scss'
+import Css from '../styles/c-player.scss'
 export default class VideoPlayer extends Component {
-    componentDidMount() {
+    constructor(props) {
+        super(props)
+    }
+    componentDidMount(prevProps, prevState, prevContext) {
         this.player = videojs(this.videoNode, this.props, () => {
             console.log('onPlayerReady', this)
         })
     }
-    componentWillMount() {
+    componentWillUnmount() {
         if (this.player) {
             this.player.dispose()
         }
     }
     render() {
         return (
-            <div data-vjs-player>
-                <video ref={node => this.videoNode = node} className="video=js"></video>
-            </div>
+            <Fragment>
+                <style dangerouslySetInnerHTML={{ __html: DefaultCss }} />
+                <style dangerouslySetInnerHTML={{ __html: Css }} />
+                <div className="v2-player" data-vjs-player>
+                    <video ref={ node => this.videoNode = node} className="video-js"></video>
+                </div>
+            </Fragment>
         )
     }
 }

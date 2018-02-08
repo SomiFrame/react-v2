@@ -5,6 +5,7 @@ import HotItem from '../../components/hotItem'
 import Css from '../../styles/play.scss'
 import Link from 'next/link'
 import ListItem from '../../components/listItem'
+import Player from '../../components/VideoPlayer'
 class Play extends Component {
     static async getInitialProps({ req }) {
         let listItems = [
@@ -57,6 +58,14 @@ class Play extends Component {
         this.handleThumbSubmit = this.handleThumbSubmit.bind(this)
     }
     render() {
+        const videoJsOptions = {
+            autoplay: true,
+            controls: true,
+            sources : [{
+                src: 'http://vjs.zencdn.net/v/oceans.mp4',
+                type: 'video/mp4'
+            }]
+        }
         const right_content = <HotItem hotItems={this.props.hotItems} />
         return (
             <Fragment>
@@ -66,6 +75,7 @@ class Play extends Component {
                         {'播放页'}
                     </label>
                     <div className="player">
+                        <Player {...videoJsOptions}></Player>
                     </div>
                     <label className="video-title">
                         {'Best Gaming Music Mix 2018 ♫ 🎮24/7 Music Live Stream | Gaming Music / Electronic Radio 🎧'}
