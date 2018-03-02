@@ -1,7 +1,12 @@
 import { Component, Fragment } from 'react'
 import videojs from 'video.js'
+import dash from 'dashjs'
+import vjsContribDash from 'videojs-contrib-dash'
 import DefaultCss from '../node_modules/video.js/src/css/vjs.scss'
 import Css from '../styles/c-player.scss'
+import vast_client from '../lib/videojs-vast-plugin/lib/vast-client'
+import vjs_ads from '../lib/videojs-vast-plugin/lib/videojs-contrib-ads/videojs.ads'
+import vjs_vast from '../lib/videojs-vast-plugin/videojs.vast'
 export default class VideoPlayer extends Component {
     constructor(props) {
         super(props)

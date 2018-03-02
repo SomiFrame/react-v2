@@ -11,16 +11,21 @@ module.exports = {
           name: 'dist/[path][name].[ext]'
         }
       }
-    ,
+      ,
       {
         test: /\.css$/,
         use: ['babel-loader', 'raw-loader', 'postcss-loader']
       }
-    ,
+      ,
+      { test: /\.swf$/, 
+        use: ["file?name=[path][name].[ext]"]
+       }
+      ,
       {
         test: /\.s(a|c)ss$/,
         use: ['babel-loader', 'raw-loader', 'postcss-loader',
-          { loader: 'sass-loader',
+          {
+            loader: 'sass-loader',
             options: {
               includePaths: ['styles', 'node_modules']
                 .map((d) => path.join(__dirname, d))

@@ -29,6 +29,7 @@
     "validate.js": "^0.12.0"
   },
   "devDependencies": {
+    "dashjs": "^2.6.6",
     "isomorphic-unfetch": "^2.0.0",
     "jquery": "^3.2.1",
     "next": "^4.2.3",
@@ -38,6 +39,9 @@
     "sass-loader": "^6.0.6",
     "slick-carousel": "^1.8.1",
     "underscore": "^1.8.3",
-    "video.js": "^6.6.3"
+    "video.js": "^6.6.3",
+    "videojs-contrib-dash": "^2.9.2",
+    "videojs-vast-vpaid": "^3.0.0-beta.8",
+    "vpaid-flash-client": "^1.0.2"
   }
 }

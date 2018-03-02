@@ -62,8 +62,8 @@ class Play extends Component {
             autoplay: true,
             controls: true,
             sources : [{
-                src: 'http://vjs.zencdn.net/v/oceans.mp4',
-                type: 'video/mp4'
+                src: 'https://s3.amazonaws.com/_bc_dml/example-content/sintel_dash/sintel_vod.mpd',
+                type: 'application/dash+xml'
             }]
         }
         const right_content = <HotItem hotItems={this.props.hotItems} />
