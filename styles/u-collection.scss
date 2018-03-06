@@ -1,0 +1,23 @@
+body {
+    background: #f2f2f2;
+    padding: 100px 0 0 200px;
+}
+
+.records-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    .records-title {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+    .records-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+}

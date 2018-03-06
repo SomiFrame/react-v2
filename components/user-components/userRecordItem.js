@@ -3,6 +3,13 @@ import React from 'react'
 import recordItemCss from 'styles/c-userRecordItem.scss'
 
 class RecordItem extends React.Component {
+    constructor(props) {
+        super(props);
+        this.deleteVideo = this.deleteVideo.bind(this);
+    }
+    deleteVideo (e) {
+        console.log(e.currentTarget.dataset.videoId);
+    }
     render() {
         return(
             <div className="RecordItem">
@@ -10,8 +17,13 @@ class RecordItem extends React.Component {
                     <img src={this.props.record.videHref} />
                     <span className="video-duration">{this.props.record.videDuration}</span>
                     {
-                        this.props.type == '0' && <div className="video-delete" data-video-id={this.props.record.id}>删除</div>
+                        this.props.type == '0' && <div className="video-delete" data-video-id={this.props.record.id} onClick={this.deleteVideo}>
+                            <img src="/static/images/pop-remove-btn.png"/>
+                        </div>
                     }
+                    <div className="video-mask">
+                        <img src="/static/images/v-play-btn.png"/>
+                    </div>
                 </div>
                 <div className="video-info">
                     <div className="video-name">{this.props.record.videoName}</div>

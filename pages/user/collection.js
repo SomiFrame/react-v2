@@ -2,9 +2,9 @@ import React from 'react'
 import {UserLayout} from '../../components/user-components/userLayout'
 import {WatchRecords} from '../../components/user-components/userRecordItem'
 
-import recordsCss from 'styles/u-records.scss'
+import collectionsCss from 'styles/u-collection.scss'
 
-const collectionList =[
+const recordList =[
     {id: 1, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'08:32',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
         videoPlays: '323504', lastTime:'1'},
     {id: 2, videHref:'http://www.videaba.cn/Uploads/Store/2016-04-07/xia.jpg',videDuration:'10:31',videoName:'白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦体白哦',
@@ -21,16 +21,16 @@ const collectionList =[
         videoPlays: '452', lastTime:'7'},
 ]
 
-class UserCollections extends React.Component {
+class UserRecords extends React.Component {
     render() {
         return(
             <div className="UserRecords">
                 <style dangerouslySetInnerHTML={{ __html: recordsCss }} />
                 <UserLayout>
                     <div className="records-container">
-                        <div className="records-title">观看记录</div>
+                        <div className="records-title">我的收藏</div>
                         <div className="records-content">
-                            <WatchRecords recordList={collectionList} type="1"/>
+                            <WatchRecords recordList={recordList} type="0"/>
                         </div>
                     </div>
                 </UserLayout>
@@ -39,4 +39,4 @@ class UserCollections extends React.Component {
     }
 }
 
-export default UserCollections;
+export default UserRecords;
