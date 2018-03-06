@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c90a0b3-ab22-4a57-8a47-4deab0a13d46" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/user-components/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/user/test.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/user-components/userPop.js" afterPath="$PROJECT_DIR$/components/user-components/userPop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/user-components/userRecordItem.js" afterPath="$PROJECT_DIR$/components/user-components/userRecordItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/user/records.js" afterPath="$PROJECT_DIR$/pages/user/records.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/c-userRecordItem.scss" afterPath="$PROJECT_DIR$/styles/c-userRecordItem.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/user/collection.js" afterPath="$PROJECT_DIR$/pages/user/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/c-userPop.scss" afterPath="$PROJECT_DIR$/styles/c-userPop.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/u-collection.scss" afterPath="$PROJECT_DIR$/styles/u-collection.scss" />
     </list>
     <ignored path="react-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,70 +30,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="income.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/user/income.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/user/pay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-                <marker date="1518074029705" expanded="true" signature="2887:2911" placeholder="//..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collection.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="collection.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/user/collection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+            <state relative-caret-position="-233">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
+                <marker date="1520325024273" expanded="true" signature="2015:2101" placeholder="{...}" />
+                <marker date="1520325024273" expanded="true" signature="2216:2266" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="records.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/user/records.js">
+      <file leaf-file-name="u-collection.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/u-collection.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="c-userRecordItem.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/styles/c-userRecordItem.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="661">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="u-pay.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/u-pay.scss">
+      <file leaf-file-name="userRecordItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/user-components/userRecordItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4342">
-              <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+            <state relative-caret-position="390">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <marker date="1520325000200" expanded="true" signature="126:2036" placeholder="{...}" />
+                <marker date="1520325000200" expanded="true" signature="256:1633" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c-userPop.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/c-userPop.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userPop.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/user-components/userPop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c-userRecordItem.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/c-userRecordItem.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1274">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -138,8 +143,6 @@
         <option value="$PROJECT_DIR$/components/user-components/userNavigate.js" />
         <option value="$PROJECT_DIR$/components/user-components/userIncome.js" />
         <option value="$PROJECT_DIR$/styles/u-income.scss" />
-        <option value="$PROJECT_DIR$/styles/c-userPop.scss" />
-        <option value="$PROJECT_DIR$/components/user-components/userPop.js" />
         <option value="$PROJECT_DIR$/pages/user/income.js" />
         <option value="$PROJECT_DIR$/pages/user/information.js" />
         <option value="$PROJECT_DIR$/pages/user/account.js" />
@@ -147,13 +150,15 @@
         <option value="$PROJECT_DIR$/components/user-components/userAccountInfo.js" />
         <option value="$PROJECT_DIR$/styles/c-userAccountInfo.scss" />
         <option value="$PROJECT_DIR$/styles/u-records.scss" />
-        <option value="$PROJECT_DIR$/components/user-components/userRecordItem.js" />
         <option value="$PROJECT_DIR$/styles/u-pay.scss" />
         <option value="$PROJECT_DIR$/pages/user/pay.js" />
-        <option value="$PROJECT_DIR$/styles/u-collection.scss" />
         <option value="$PROJECT_DIR$/styles/c-userRecordItem.scss" />
-        <option value="$PROJECT_DIR$/pages/user/collection.js" />
         <option value="$PROJECT_DIR$/pages/user/records.js" />
+        <option value="$PROJECT_DIR$/styles/c-userPop.scss" />
+        <option value="$PROJECT_DIR$/components/user-components/userPop.js" />
+        <option value="$PROJECT_DIR$/styles/u-collection.scss" />
+        <option value="$PROJECT_DIR$/components/user-components/userRecordItem.js" />
+        <option value="$PROJECT_DIR$/pages/user/collection.js" />
       </list>
     </option>
   </component>
@@ -295,6 +300,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-v2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -389,18 +412,18 @@
       <workItem from="1518054942125" duration="13531000" />
       <workItem from="1518140842603" duration="2551000" />
       <workItem from="1519869396822" duration="1679000" />
-      <workItem from="1520319546787" duration="1002000" />
+      <workItem from="1520319546787" duration="4389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247355000" />
+    <option name="totallyTimeSpent" value="250742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1901603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17302378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,20 +461,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/beauty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/hotItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/loginPop.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -551,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3302">
-          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/user/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,31 +609,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/c-userPop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userPop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -653,13 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userAccountInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -724,7 +698,7 @@
         <state relative-caret-position="1872">
           <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,17 +723,9 @@
         <state relative-caret-position="312">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
             <marker date="1518074029705" expanded="true" signature="2887:2911" placeholder="//..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/u-collection.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,39 +737,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userRecordItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/user/records.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
+            <marker date="1520321698791" expanded="true" signature="1763:2328" placeholder="{...}" />
+            <marker date="1520321698791" expanded="true" signature="1778:2326" placeholder="{...}" />
+            <marker date="1520321698791" expanded="true" signature="1808:2309" placeholder="&lt;xml/&gt;" />
+            <marker date="1520321698791" expanded="true" signature="1929:2290" placeholder="&lt;xml/&gt;" />
+            <marker date="1520321698791" expanded="true" signature="1962:2260" placeholder="&lt;xml/&gt;" />
+            <marker date="1520321698791" expanded="true" signature="2088:2233" placeholder="&lt;xml/&gt;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/userLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="6" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/c-userRecordItem.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="1274">
           <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/c-userPop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/userPop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/userProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3302">
+          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/userAccountInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/u-collection.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user-components/userRecordItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1520325000200" expanded="true" signature="126:2036" placeholder="{...}" />
+            <marker date="1520325000200" expanded="true" signature="256:1633" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1520325024273" expanded="true" signature="2015:2101" placeholder="{...}" />
+            <marker date="1520325024273" expanded="true" signature="2216:2266" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

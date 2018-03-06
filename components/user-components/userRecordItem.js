@@ -7,8 +7,12 @@ class RecordItem extends React.Component {
         super(props);
         this.deleteVideo = this.deleteVideo.bind(this);
     }
-    deleteVideo (e) {
-        console.log(e.currentTarget.dataset.videoId);
+    deleteVideo(e) {
+        const videoId = e.currentTarget.dataset.videoId;
+        console.log(videoId);
+        //弹出框 //给弹框赋值
+        document.getElementById('PopBox').style.display="block";
+        document.getElementById('collection-certain').dataset.videoId = videoId;
     }
     render() {
         return(
@@ -17,7 +21,8 @@ class RecordItem extends React.Component {
                     <img src={this.props.record.videHref} />
                     <span className="video-duration">{this.props.record.videDuration}</span>
                     {
-                        this.props.type == '0' && <div className="video-delete" data-video-id={this.props.record.id} onClick={this.deleteVideo}>
+                        this.props.type == '0' &&
+                        <div className="video-delete" data-video-id={this.props.record.id} onClick={this.deleteVideo}>
                             <img src="/static/images/pop-remove-btn.png"/>
                         </div>
                     }

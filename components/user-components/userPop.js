@@ -10,7 +10,7 @@ class PopBox extends React.Component {
     closePop(e) {
         const pop = document.getElementById('PopBox');
         if(pop.style.display=="none") {
-            pop.style.display="";
+            pop.style.display="block";
         } else {
             pop.style.display="none";
         }
