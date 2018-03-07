@@ -24,6 +24,36 @@
             position: absolute;
             top: 0px;
             right: 0px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: #f07;
+            padding-top: 2px;
+            cursor: pointer;
+            z-index: 11;
+            display: none;
+        }
+        .video-mask {
+            display: none;
+            height: 123px;
+            width: 220px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: rgba(0,0,0,0.5);
+            text-align: center;
+            padding-top: 25px;
+            z-index: 10;
+            cursor: pointer;
+        }
+        &:hover {
+            .video-mask {
+                display: block;
+            }
+            .video-delete {
+                display: block;
+            }
         }
     }
     .video-info {
