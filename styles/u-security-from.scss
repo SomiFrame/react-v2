@@ -1,0 +1,147 @@
+body {
+    background: #f2f2f2;
+    padding: 100px 0 0 200px;
+}
+
+.div-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    .div-title {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #333;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .div-content {
+        width: 100%;
+        padding: 100px 0px 200px 0px;
+        text-align: center;
+    }
+}
+//帐号安全中表单中的样式
+.security-form {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    .from-row {
+        margin-bottom: 14px;
+        > label {
+            margin-right: 20px;
+        }
+        > input {
+            width: 300px;
+            height: 36px;
+            line-height: 36px;
+            border: 1px solid #ddd;
+            padding: 0 15px;
+            color: #666;
+        }
+        .input-code {
+            width: 180px;
+            margin-right: 10px;
+        }
+        > button {
+            width: 300px;
+            height: 38px;
+            line-height: 38px;
+            border: none;
+            background: #f07;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 112px;
+            margin-top: 36px;
+        }
+        .button-send {
+            width: 110px;
+            margin: 0px;
+        }
+        .from-error {
+            margin: 10px 0 0 408px;
+            width: 300px;
+            text-align: left;
+            font-size: 12px;
+            color: #f07;
+        }
+    }
+}
+.edit-pay-password {
+    font-size: 12px;
+    color: #666;
+    width: 300px;
+    text-align: left;
+    margin: -4px 0 20px 408px;
+    a {
+        color: #f07;
+    }
+}
+
+.step2-form {
+    display: none;
+}
+.step3-form {
+    display: none;
+    font-size: 20px;
+    color: #333;
+    > p {
+        font-size: 14px;
+        color: #999;
+        > span {
+            color: #f07;
+            cursor: pointer;
+        }
+    }
+}
+.modify-password-form {
+    display: none;
+}
+//
+.security-top {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    .top-step {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        > div {
+            margin: 0 auto;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 50%;
+            background: #aaa;
+            color: #fff;
+            font-size: 14px;
+        }
+        > p {
+            color: #aaa;
+        }
+    }
+    .top-step-hover {
+        > div {
+            background: #f07;
+        }
+        > p {
+            color: #f07;
+        }
+    }
+    .top-line {
+        vertical-align: 37px;
+        display: inline-block;
+        width: 138px;
+        height: 1px;
+        border-top: 1px solid #aaa;
+    }
+    .top-line1 {
+        margin: 0 -19px;
+    }
+    .top-line2 {
+        margin: 0 -12px 0 -19px;
+    }
+}

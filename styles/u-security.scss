@@ -1,0 +1,52 @@
+body {
+    background: #f2f2f2;
+    padding: 100px 0 0 200px;
+}
+
+.security-container {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    .security-title {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #333;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .security-content {
+        width: 100%;
+        padding: 20px 30px 200px 30px;
+        .security-div {
+            height: 100px;
+            line-height: 100px;
+            font-size: 16px;
+            position: relative;
+            color: #333;
+            border-bottom: 1px solid #f3f3f3;
+            padding: 0 20px;
+            > label {
+                margin-right: 50px;
+            }
+            > span {
+                font-size: 14px;
+                color: #999;
+            }
+            > a {
+                float: right;
+                font-size: 14px;
+                color: #f07;
+                cursor: pointer;
+            }
+            .div-float {
+                position: absolute;
+                left: 30px;
+                top: 25px;
+                font-size: 14px;
+                color: #999;
+            }
+        }
+    }
+}
