@@ -51,17 +51,23 @@ class Play extends Component {
     constructor(props) {
         super(props)
         this.state = this.props;
-        this.setState({
-            thumb: true
-        })
         this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
         this.handleThumbSubmit = this.handleThumbSubmit.bind(this)
     }
+
     render() {
         const videoJsOptions = {
-            autoplay: true,
             controls: true,
-            sources : [{
+            plugins: {
+                vastClient: {
+                    //adTagUrl: 'http://servedby.flashtalking.com/imp/1/31714;812030;208;xml;DailyMail;640x360VASTHTML5/?cachebuster=%%CACHEBUSTER%%',
+                    adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=%2F124319096%2Fexternal%2Fsingle_ad_samples&ciu_szs=300x250&gdfp_req=1&env=vp&output=xml_vast3&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&correlator=1348156666948684&eid=324123020&sdkv=h.3.193.2&sdki=3c0d&scor=2474487070519334&adk=2362470801&u_so=l&osd=2&frm=0&sdr=1&is_amp=0&afvsz=200x200%2C250x250%2C300x250%2C336x280%2C450x50%2C468x60%2C480x70%2C728x90&url=https%3A%2F%2Ffoliovision.com%2Fplayer%2Fvast%2Fsample-vast-tags&ged=ve4_td1541_tt0_pd1541_la1541000_er332.10.489.310_vi121.0.1082.922_vp100_eb24171',
+                    adCancelTimeout: 5000,
+                    playAdAlways: true,
+                    adsEnabled: true
+                }
+            },
+            sources: [{
                 src: 'https://s3.amazonaws.com/_bc_dml/example-content/sintel_dash/sintel_vod.mpd',
                 type: 'application/dash+xml'
             }]
@@ -158,7 +164,7 @@ class Play extends Component {
                                         <label>{'以前好像上过电视'}</label>
                                         <div className="like-container">
                                             <span className="like-count">{703}</span>
-                                            <button onClick={this.handleThumbSubmit} className={this.state.thumb?"button-like active":"button-like"}></button>
+                                            <button onClick={this.handleThumbSubmit} className={this.state.thumb ? "button-like active" : "button-like"}></button>
                                         </div>
                                     </div>
                                 </div>
@@ -175,12 +181,12 @@ class Play extends Component {
             </Fragment>
         )
     }
-    handleCommentSubmit(e){
+    handleCommentSubmit(e) {
         console.log(e);
 
     }
     handleThumbSubmit(e) {
-        this.setState((prevState,props)=>({
+        this.setState((prevState, props) => ({
             thumb: !prevState.thumb
         }))
     }

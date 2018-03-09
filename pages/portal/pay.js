@@ -43,7 +43,8 @@ class Pay extends React.Component {
         return {
             listItems,
             hotItems,
-            vipInfos
+            vipInfos,
+            Router
         }
     }
     constructor(props) {
@@ -54,7 +55,7 @@ class Pay extends React.Component {
         const right_content = <HotItem hotItems={this.state.hotItems} />
         return (
             <div className="Pay" >
-                <Layout right_content={right_content}>
+                <Layout right_content={right_content} Router={this.props.Router}>
                     <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
                     <div className="pay-content">
                         <div className="title"><div>VIP套餐</div></div>

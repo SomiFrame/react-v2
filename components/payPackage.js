@@ -19,7 +19,7 @@ class VipPackage extends React.Component {
 }
 
 const VipPrevilige = (props) => (
-    <div class="VipPrevilige">
+    <div className="VipPrevilige">
         <div>
             <img src="/static/images/p-download.png"/>
             <div>
