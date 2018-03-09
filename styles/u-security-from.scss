@@ -53,7 +53,7 @@ body {
             color: #fff;
             text-align: center;
             cursor: pointer;
-            margin-left: 98px;
+            margin-left: 112px;
             margin-top: 36px;
         }
         .button-send {
@@ -61,14 +61,25 @@ body {
             margin: 0px;
         }
         .from-error {
-            margin: 10px auto;
-            width: 205px;
+            margin: 10px 0 0 408px;
+            width: 300px;
             text-align: left;
             font-size: 12px;
             color: #f07;
         }
     }
 }
+.edit-pay-password {
+    font-size: 12px;
+    color: #666;
+    width: 300px;
+    text-align: left;
+    margin: -4px 0 20px 408px;
+    a {
+        color: #f07;
+    }
+}
+
 .step2-form {
     display: none;
 }
@@ -84,6 +95,9 @@ body {
             cursor: pointer;
         }
     }
+}
+.modify-password-form {
+    display: none;
 }
 //
 .security-top {

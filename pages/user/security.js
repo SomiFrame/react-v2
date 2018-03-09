@@ -6,6 +6,10 @@ import securityCss from 'styles/u-security.scss'
 
 
 class Security extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {isSetPayPwd: true}
+    }
     render() {
         return(
             <div className="Security">
@@ -27,8 +31,8 @@ class Security extends React.Component {
                             </div>
                                 <div className="security-div">
                                 <label>支付密码</label>
-                                <div className="div-float">未设置</div>
-                                <Link href="/user/setPayPassword"><a>修改</a></Link>
+                                <div className="div-float">{this.state.isSetPayPwd ? '已设置' : '未设置'}</div>
+                                <Link href={this.state.isSetPayPwd ? '/user/editPayPassword' : '/user/setPayPassword'}><a>修改</a></Link>
                             </div>
                         </div>
                     </div>

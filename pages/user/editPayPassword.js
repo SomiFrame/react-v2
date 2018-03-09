@@ -9,8 +9,9 @@ import securityFromCss from 'styles/u-security-from.scss'
 const constraints = {
     password: {
         presence: {
-            message: '^*当前密码不能为空'
-        },
+            message: '^*当前支付密码不能为空'
+        }
+        ,
         length: {
             minimum: 6,
             tooShort: '^*密码的长度为6到16个字符，请检查',
@@ -20,7 +21,7 @@ const constraints = {
     },
     newPassword: {
         presence: {
-            message: '^*新密码不能为空'
+            message: '^*新支付密码不能为空'
         }
         ,
         length: {
@@ -32,7 +33,7 @@ const constraints = {
     },
     confirmPassword: {
         presence: {
-            message: '^*重复新密码不能为空'
+            message: '^*重复新支付密码不能为空'
         },
         length: {
             minimum: 6,
@@ -42,12 +43,12 @@ const constraints = {
         },
         equality: {
             attribute: "newPassword",
-            message: "^*重复新密码和新密码两次输入不一致"
+            message: "^*重复新支付密码和新支付密码两次输入不一致"
         }
     }
 };
 
-class AccountPassword extends React.Component {
+class EditPayPassword extends React.Component {
     constructor(props) {
         super(props);
         this.submit = this.submit.bind(this);
@@ -60,7 +61,7 @@ class AccountPassword extends React.Component {
         if (errors) {
             for (let i in errors) {
                 $(form).find('.from-error[name="' + i + '"]').html(errors[i][0]);
-                    // .addClass('has-error');
+                // .addClass('has-error');
             }
         } else {
             $(form).find('.from-error').html('');
@@ -69,32 +70,34 @@ class AccountPassword extends React.Component {
             $('.step3-form').show();
         }
     }
+
     render() {
         return(
-            <div className="AccountPassword">
+            <div className="EditPayPassword">
                 <style dangerouslySetInnerHTML={{ __html: securityFromCss }} />
                 <UserLayout>
                     <div className="div-container">
-                        <div className="div-title">帐号密码修改</div>
+                        <div className="div-title">支付密码修改</div>
                         <div className="div-content">
                             <form className="security-form" onSubmit={this.submit}>
                                 <div className="from-row">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前密码 :</label>
+                                    <label>当前支付密码 :</label>
                                     <input type="password" name="password" />
                                     <div className="from-error" name="password"></div>
                                 </div>
+                                <div className="edit-pay-password">忘记支付密码？<Link href="/user/forgetPayPassword"><a>邮箱验证</a></Link></div>
                                 <div className="from-row">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新密码 :</label>
+                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;新支付密码 :</label>
                                     <input type="password" name="newPassword" />
                                     <div className="from-error" name="newPassword"></div>
                                 </div>
                                 <div className="from-row">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;重复新密码 :</label>
+                                    <label>重复支付密码 :</label>
                                     <input type="password" name="confirmPassword" />
                                     <div className="from-error" name="confirmPassword"></div>
                                 </div>
                                 <div className="from-row">
-                                    <button type="submit">确认修改</button>
+                                    <button type="submit" className="set-pay-password">确认修改</button>
                                 </div>
                             </form>
                             <div className="step3-form">
@@ -109,4 +112,4 @@ class AccountPassword extends React.Component {
     }
 }
 
-export default AccountPassword;
+export default EditPayPassword;

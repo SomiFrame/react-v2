@@ -6,7 +6,7 @@ import {UserLayout} from '../../components/user-components/userLayout'
 
 import securityFromCss from 'styles/u-security-from.scss'
 
-const constraints1 = {
+const constraints = {
     email: {
         presence: {
             message: '^*安全邮箱不能为空'
@@ -23,40 +23,48 @@ const constraints1 = {
     }
 };
 const constraints2 = {
-    newEmail: {
+    password: {
         presence: {
-            message: '^*新邮箱不能为空'
-        },
-        email: {
-            message: '^*新邮箱格式不正确'
+            message: '^*新支付密码不能为空'
+        }
+        ,
+        length: {
+            minimum: 6,
+            tooShort: '^*密码的长度为6到16个字符，请检查',
+            maximum: 16,
+            tooLong: '^*密码的长度为6到16个字符，请检查'
         }
     },
-    newCode: {
+    newPassword: {
         presence: {
-            message: '^*验证码不能为空'
+            message: '^*重复新支付密码不能为空'
+        },
+        length: {
+            minimum: 6,
+            tooShort: '^*密码的长度为6到16个字符，请检查',
+            maximum: 16,
+            tooLong: '^*密码的长度为6到16个字符，请检查'
+        },
+        equality: {
+            attribute: "password",
+            message: "^*重复新支付密码和新支付密码两次输入不一致"
         }
-
     }
 };
-
-class SecurityEmail extends React.Component {
+class ForgetPayPassword extends React.Component {
     constructor(props) {
         super(props);
-        this.step1submit = this.step1submit.bind(this);
-        this.step1sendCode = this.step1sendCode.bind(this);
-        this.step2submit = this.step2submit.bind(this);
-        this.step2sendCode = this.step2sendCode.bind(this);
+        this.secdCode = this.secdCode.bind(this);
+        this.validateSubmit = this.validateSubmit.bind(this);
+        this.modifySubmit = this.modifySubmit.bind(this);
     }
-    step1sendCode(e) {
-        console.log('步骤1发送验证码');
+    secdCode(e) {
+        console.log('第一步发送验证码');
     }
-    step2sendCode(e) {
-        console.log('步骤2发送验证码');
-    }
-    step1submit(e) {
+    validateSubmit(e) {
         e.preventDefault();
         var form = e.target || e.srcElement;
-        var errors = validate(form,constraints1);
+        var errors = validate(form,constraints);
         // $(form).find('label').html('').removeClass('has-error');
         if (errors) {
             for (let i in errors) {
@@ -66,12 +74,12 @@ class SecurityEmail extends React.Component {
         } else {
             $(form).find('.from-error').html('');
             console.log('没有错误，可以提交了');
-            //隐藏步骤1，现实步骤2
-            $('.step1-form').hide();
-            $('.step2-form').show();
+            //隐藏第一步操作 展示第二部操作
+            $('.validate-email-form').hide();
+            $('.modify-password-form').show();
         }
     }
-    step2submit(e) {
+    modifySubmit(e) {
         e.preventDefault();
         var form = e.target || e.srcElement;
         var errors = validate(form,constraints2);
@@ -84,36 +92,19 @@ class SecurityEmail extends React.Component {
         } else {
             $(form).find('.from-error').html('');
             console.log('没有错误，可以提交了');
-            //隐藏步骤2，显示修改成功
-            $('.step2-form').hide();
+            $('.modify-password-form').hide();
             $('.step3-form').show();
         }
     }
     render() {
         return(
-            <div className="SecurityEmail">
+            <div className="ForgetPayPassword">
                 <style dangerouslySetInnerHTML={{ __html: securityFromCss }} />
                 <UserLayout>
                     <div className="div-container">
-                        <div className="div-title">安全邮箱修改</div>
+                        <div className="div-title">支付密码 > 邮箱验证</div>
                         <div className="div-content">
-                            <div className="security-top">
-                                <div className="top-step top-step1 top-step-hover">
-                                    <div>1</div>
-                                    <p>验证原邮箱</p>
-                                </div>
-                                <div className="top-line top-line1"></div>
-                                <div className="top-step top-step2">
-                                    <div>2</div>
-                                    <p>绑定新邮箱</p>
-                                </div>
-                                <div className="top-line top-line2"></div>
-                                <div className="top-step top-step3">
-                                    <div>3</div>
-                                    <p>修改完成</p>
-                                </div>
-                            </div>
-                            <form className="security-form step1-form" onSubmit={this.step1submit}>
+                            <form className="security-form validate-email-form" onSubmit={this.validateSubmit}>
                                 <div className="from-row">
                                     <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全邮箱 :</label>
                                     <input type="text" name="email" />
@@ -122,32 +113,31 @@ class SecurityEmail extends React.Component {
                                 <div className="from-row">
                                     <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码 :</label>
                                     <input type="text" name="code" className="input-code"/>
-                                    <button className="button-send" type="button" onClick={this.step1sendCode}>发送</button>
+                                    <button className="button-send" type="button" onClick={this.secdCode}>发送</button>
                                     <div className="from-error" name="code"></div>
                                 </div>
                                 <div className="from-row">
-                                    <button type="submit">下一步</button>
+                                    <button type="submit" className="set-pay-password">下一步</button>
                                 </div>
                             </form>
-                            <form className="security-form step2-form" onSubmit={this.step2submit}>
+                            <form className="security-form modify-password-form" onSubmit={this.modifySubmit}>
                                 <div className="from-row">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;绑定新邮箱 :</label>
-                                    <input type="text" name="newEmail" />
-                                    <div className="from-error" name="newEmail"></div>
+                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;新支付密码 :</label>
+                                    <input type="password" name="password" />
+                                    <div className="from-error" name="password"></div>
                                 </div>
                                 <div className="from-row">
-                                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码 :</label>
-                                    <input type="text" name="newCode" className="input-code"/>
-                                    <button className="button-send" type="button" onClick={this.step2sendCode}>发送</button>
-                                    <div className="from-error" name="newCode"></div>
+                                    <label>重复支付密码 :</label>
+                                    <input type="password" name="newPassword"/>
+                                    <div className="from-error" name="newPassword"></div>
                                 </div>
                                 <div className="from-row">
-                                    <button type="submit">确认修改</button>
+                                    <button type="submit" className="set-pay-password">确认</button>
                                 </div>
                             </form>
                             <div className="step3-form">
-                                恭喜您！您的邮箱修改成功。
-                                <p>跳转至<Link href="/user/security"><span>帐号安全</span></Link></p>
+                                恭喜您！密码修改成功,请牢记。
+                                <p>跳转至 <Link href="/user/security"><span>帐号安全</span></Link></p>
                             </div>
                         </div>
                     </div>
@@ -157,4 +147,4 @@ class SecurityEmail extends React.Component {
     }
 }
 
-export default SecurityEmail;
+export default ForgetPayPassword;

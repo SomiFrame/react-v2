@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4c90a0b3-ab22-4a57-8a47-4deab0a13d46" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/user/accountPassword.js" afterPath="$PROJECT_DIR$/pages/user/accountPassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/user/security.js" afterPath="$PROJECT_DIR$/pages/user/security.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/user/securityEmail.js" afterPath="$PROJECT_DIR$/pages/user/securityEmail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/u-security-from.scss" afterPath="$PROJECT_DIR$/styles/u-security-from.scss" />
     </list>
     <ignored path="react-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,36 +27,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="collection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/user/collection.js">
+      <file leaf-file-name="security.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/user/security.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1378">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="63" selection-end-column="26" />
+            <state relative-caret-position="260">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editPayPassword.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/user/editPayPassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accountPassword.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/user/accountPassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2418">
+              <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="102" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/user/security.js">
+      <file leaf-file-name="setPayPassword.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/user/setPayPassword.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="securityEmail.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/user/securityEmail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1592">
-              <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2106">
+              <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,8 +74,8 @@
       <file leaf-file-name="u-security-from.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/u-security-from.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2158">
-              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+            <state relative-caret-position="1924">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -87,6 +101,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="forgetPayPassword.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/user/forgetPayPassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3484">
+              <caret line="140" column="34" selection-start-line="140" selection-start-column="34" selection-end-line="140" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -95,9 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/index.js" />
-        <option value="$PROJECT_DIR$/components/layout.js" />
-        <option value="$PROJECT_DIR$/styles/c-payPackage.scss" />
         <option value="$PROJECT_DIR$/components/payPackage.js" />
         <option value="$PROJECT_DIR$/pages/pay.js" />
         <option value="$PROJECT_DIR$/styles/pay.scss" />
@@ -142,10 +165,13 @@
         <option value="$PROJECT_DIR$/components/user-components/userRecordItem.js" />
         <option value="$PROJECT_DIR$/pages/user/collection.js" />
         <option value="$PROJECT_DIR$/styles/u-security.scss" />
+        <option value="$PROJECT_DIR$/pages/user/securityEmail.js" />
+        <option value="$PROJECT_DIR$/styles/u-security-from.scss" />
         <option value="$PROJECT_DIR$/pages/user/security.js" />
         <option value="$PROJECT_DIR$/pages/user/accountPassword.js" />
-        <option value="$PROJECT_DIR$/styles/u-security-from.scss" />
-        <option value="$PROJECT_DIR$/pages/user/securityEmail.js" />
+        <option value="$PROJECT_DIR$/pages/user/editPayPassword.js" />
+        <option value="$PROJECT_DIR$/pages/user/setPayPassword.js" />
+        <option value="$PROJECT_DIR$/pages/user/forgetPayPassword.js" />
       </list>
     </option>
   </component>
@@ -195,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,7 +335,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,18 +427,19 @@
       <workItem from="1519869396822" duration="1679000" />
       <workItem from="1520319546787" duration="8646000" />
       <workItem from="1520386282009" duration="10898000" />
-      <workItem from="1520473983676" duration="1424000" />
+      <workItem from="1520473983676" duration="10963000" />
+      <workItem from="1520559629001" duration="194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267321000" />
+    <option name="totallyTimeSpent" value="277054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17689331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17910448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -450,27 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user-components/userHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/c-userFooter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/c-layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -580,13 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3328">
-          <caret line="128" column="48" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -746,46 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/accountPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="64" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/user/collection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1378">
           <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="63" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/security.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/user/securityEmail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1592">
-          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/u-security-from.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2158">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,6 +765,74 @@
         <state relative-caret-position="364">
           <caret line="14" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1424">
+          <caret line="128" column="48" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/securityEmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="150" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/u-security-from.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1924">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/security.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/accountPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2418">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="102" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/setPayPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/forgetPayPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3484">
+          <caret line="140" column="34" selection-start-line="140" selection-start-column="34" selection-end-line="140" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/editPayPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
